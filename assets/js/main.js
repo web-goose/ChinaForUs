@@ -10,3 +10,8 @@ const wow = new WOW(
     }
 );
 wow.init();
+
+
+function scrollToAnchor(anchorName) {
+    $('html, body').stop().animate({scrollTop: $(anchorName).offset().top}, 1000);
+}
