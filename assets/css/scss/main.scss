@@ -54,7 +54,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 776px;
-  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("/img/header/bg.jpeg") center;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../../img/header/bg.jpeg") center;
   background-size: cover;
 }
 
@@ -214,7 +214,7 @@ body {
 }
 @for $i from 1 through 8 {
   .services-item:nth-child(#{$i}) .services-item-img{
-    background: url("/img/services/#{$i}.jpg") center center no-repeat;
+    background: url("../../img/services/#{$i}.jpg") center center no-repeat;
   }
 }
 
