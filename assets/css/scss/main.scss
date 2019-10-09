@@ -144,16 +144,23 @@ body {
 }
 
 .services-items {
-  padding: 40px 0;
+  padding: 10px 0;
   display: flex;
   justify-content: center;
 }
 
 .services-item {
+  border: 10px solid #fff;
   position: relative;
   height: 300px;
-  width: 100%;
   cursor: pointer;
+  background-size: 150% !important;
+  margin: 10px 0;
+  transition: .3s;
+
+  &:hover{
+    background-size: 160% !important;
+  }
 
   &:hover .services-item-shade {
     background: rgba(0, 0, 0, .5);
@@ -165,10 +172,6 @@ body {
 
   &:hover .services-item-info-inner {
     border: 2px solid #fff;
-  }
-
-  &:hover .services-item-img {
-    background-size: 100% !important;
   }
 
   &:hover .services-item-title {
@@ -190,37 +193,21 @@ body {
 .services-item-shade {
   transition: background-color .3s;
   position: absolute;
+  left: 0;
   height: 100%;
   width: 100%;
   z-index: 999;
 }
 
-.services-item.box {
-  box-model: border-box;
-  border: 10px solid transparent;
-  background-clip: padding-box;
-}
-
-.services-item-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  background-size: 120% !important;
-  height: 100%;
-  width: 100%;
-  transition: .3s;
-}
 @for $i from 1 through 8 {
-  .services-item:nth-child(#{$i}) .services-item-img{
+  .services-item:nth-child(#{$i}){
     background: url("../../img/services/#{$i}.jpg") center center no-repeat;
   }
 }
 
 .services-item-info {
-  border: 1px solid #fff;
   position: absolute;
+  left: 0;
   transition: all .3s;
   height: 100%;
   width: 100%;
