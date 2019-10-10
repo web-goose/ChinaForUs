@@ -1,23 +1,48 @@
 $textWhite: #ffffff;
 $textBlack: #000000;
 $orangeColor: #f5914f;
+$h2: 3.8em;
+$h3: 2.4em;
+$sectionPadding: 100px 0 0 0;
 
 %textSemiBold {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 
 %textBold {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 
 body {
   width: 100%;
   height: 100%;
-  font-family: 'Montserrat', arial, sans-serif;
-  font-weight: 400;
+  font-family: 'Montserrat', arial, sans-serif !important;
+  font-weight: 400 !important;
   font-size: 10px;
 }
+
+section{
+  padding: $sectionPadding;
+}
+
+.section_title, .section_desc {
+  text-align: center;
+}
+
+.section_title {
+  font-size: 3.8em;
+  color: $textBlack;
+  @extend %textSemiBold;
+}
+
+.section_desc {
+  padding: 20px 0;
+  font-size: 2.4em;
+}
+
+
+///////////////////
 
 .header-nav {
   background: #000000;
@@ -121,26 +146,6 @@ body {
   100% {
     bottom: 50px;
   }
-}
-
-
-.services {
-  padding: 50px 5px;
-}
-
-.services_title, .services_desc {
-  text-align: center;
-}
-
-.services_title {
-  font-size: 3.8em;
-  color: $textBlack;
-  @extend %textSemiBold;
-}
-
-.services_desc {
-  padding: 20px 0;
-  font-size: 2.4em;
 }
 
 .services-items {
@@ -248,4 +253,5 @@ body {
   transition: .5s;
 }
 
+@import "timeline";
 @import 'media';
