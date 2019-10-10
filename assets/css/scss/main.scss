@@ -3,14 +3,14 @@ $textBlack: #000000;
 $orangeColor: #f5914f;
 $h2: 3.8em;
 $h3: 2.4em;
-$sectionPadding: 100px 0 0 0;
+$sectionMargin: 100px 0 0 0;
 
 %textSemiBold {
-  font-weight: 600 !important;
+  font-weight: 600;
 }
 
 %textBold {
-  font-weight: 700 !important;
+  font-weight: 700;
 }
 
 
@@ -18,12 +18,12 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Montserrat', arial, sans-serif !important;
-  font-weight: 400 !important;
+  font-weight: 400;
   font-size: 10px;
 }
 
-section{
-  padding: $sectionPadding;
+section {
+  padding: $sectionMargin;
 }
 
 .section_title, .section_desc {
@@ -44,13 +44,13 @@ section{
 
 ///////////////////
 
-header{
+header {
   background: url("../../img/header/bg.jpeg") center;
   background-size: cover;
 }
 
 .header-nav {
-  background: rgba(0,0,0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   height: 80px;
   padding: 5px 40px;
 }
@@ -83,7 +83,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 776px;
+  height: 576px;
   background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6));
 }
 
@@ -104,6 +104,7 @@ header{
   font-size: 2.4em;
   margin: 40px 0;
   visibility: hidden;
+  font-weight: 100;
 }
 
 .header-wrap-btn {
@@ -167,7 +168,7 @@ header{
   margin: 10px 0;
   transition: .3s;
 
-  &:hover{
+  &:hover {
     background-size: 160% !important;
   }
 
@@ -192,6 +193,7 @@ header{
     top: 50%;
     opacity: 1;
   }
+
   &:hover:nth-child(2) .services-item-desc {
     top: 55%;
     opacity: 1;
@@ -209,7 +211,7 @@ header{
 }
 
 @for $i from 1 through 8 {
-  .services-item:nth-child(#{$i}){
+  .services-item:nth-child(#{$i}) {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../img/services/#{$i}.jpg") center center no-repeat;
   }
 }
@@ -240,7 +242,6 @@ header{
     font-size: 24px;
     z-index: 5000;
     width: 80%;
-    text-shadow: 0 0 5px #000000;
     transition: .5s;
   }
 
@@ -258,7 +259,9 @@ header{
 }
 
 .activity {
-  background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url("../../img/activity/bg.jpeg") center no-repeat;
+  color: $textWhite;
+  margin: $sectionMargin;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../../img/activity/bg.jpeg") center no-repeat;
   background-size: cover;
 
   .activity-inner {
@@ -267,8 +270,7 @@ header{
     padding-bottom: 100px;
   }
 
-  .typewriter{
-    color: #000;
+  .typewriter {
     @extend %textBold;
     overflow: hidden;
     border-right: .15em solid orange;
@@ -284,6 +286,40 @@ header{
       border-color: orange
     }
   }
+}
+
+
+.whoWeAre {
+  text-align: center;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+
+  .item-img {
+    img {
+      max-width: 347px;
+      width: 100%;
+    }
+  }
+
+  .item-name {
+    font-size: 18px;
+    @extend %textBold;
+    padding: 10px 0;
+  }
+
+  .item-hr {
+    margin: 0 auto;
+    background: #E2E2E2;
+    width: 4em;
+    height: .3em;
+  }
+
+  .item-position {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
 }
 
 @import "timeline";

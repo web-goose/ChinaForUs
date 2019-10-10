@@ -11,6 +11,16 @@ const wow = new WOW(
 );
 wow.init();
 
+let owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:3,
+    loop:true,
+    margin:10,
+    autoplay:false,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true
+});
+
 
 function scrollToAnchor(anchorName) {
     $('html, body').stop().animate({scrollTop: $(anchorName).offset().top}, 1000);
