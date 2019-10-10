@@ -3,7 +3,7 @@ $textBlack: #000000;
 $orangeColor: #f5914f;
 $h2: 3.8em;
 $h3: 2.4em;
-$sectionMargin: 100px auto;
+$sectionMargin: 100px 0;
 
 %textSemiBold {
   font-weight: 600;
@@ -66,15 +66,15 @@ header {
     }
 
     .header-nav-item {
-      padding: 0 15px !important;
-      font-size: 1.6em;
+      padding: 0 15px;
+      font-size: 16px;
       text-decoration: none;
       color: $textWhite;
       @extend %textSemiBold;
     }
 
     .header-nav-item:first-child {
-      padding-left: 0 !important;
+      padding-left: 0;
     }
 
     .header-nav-item {
@@ -333,6 +333,7 @@ header {
   max-width: 900px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 10px;
 
   .item-img {
     img {
