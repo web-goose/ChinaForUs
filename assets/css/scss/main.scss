@@ -44,8 +44,13 @@ section{
 
 ///////////////////
 
+header{
+  background: url("../../img/header/bg.jpeg") center;
+  background-size: cover;
+}
+
 .header-nav {
-  background: #000000;
+  background: rgba(0,0,0, 0.5);
   height: 80px;
   padding: 5px 40px;
 }
@@ -79,8 +84,7 @@ section{
   align-items: center;
   justify-content: center;
   height: 776px;
-  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../../img/header/bg.jpeg") center;
-  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6));
 }
 
 .header-wrap-info {
