@@ -206,7 +206,7 @@ section{
 
 @for $i from 1 through 8 {
   .services-item:nth-child(#{$i}){
-    background: url("../../img/services/#{$i}.jpg") center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../img/services/#{$i}.jpg") center center no-repeat;
   }
 }
 
@@ -216,41 +216,70 @@ section{
   transition: all .3s;
   height: 100%;
   width: 100%;
+
+  .services-item-info-inner {
+    transition: border .3s;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .services-item-title, .services-item-desc {
+    color: $textWhite;
+  }
+
+  .services-item-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    font-size: 24px;
+    z-index: 5000;
+    width: 80%;
+    text-shadow: 0 0 5px #000000;
+    transition: .5s;
+  }
+
+  .services-item-desc {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.6em;
+    z-index: 5000;
+    width: 80%;
+    opacity: 0;
+    transition: .5s;
+  }
 }
 
-.services-item-info-inner {
-  transition: border .3s;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-}
+.activity {
+  background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url("../../img/activity/bg.jpeg") center no-repeat;
+  background-size: cover;
 
-.services-item-title, .services-item-desc {
-  color: $textWhite;
-}
+  .activity-inner {
+    text-align: center;
+    font-size: 2.8em;
+    padding-bottom: 100px;
+  }
 
-.services-item-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  font-size: 24px;
-  z-index: 5000;
-  width: 80%;
-  text-shadow: 0 0 5px #000000;
-  transition: .5s;
-}
+  .typewriter{
+    color: #000;
+    @extend %textBold;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    animation: blink-caret .5s step-end infinite;
+  }
 
-.services-item-desc {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 1.6em;
-  z-index: 5000;
-  width: 80%;
-  opacity: 0;
-  transition: .5s;
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent
+    }
+    50% {
+      border-color: orange
+    }
+  }
 }
 
 @import "timeline";

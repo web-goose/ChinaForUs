@@ -19,7 +19,7 @@
 }
 
 @mixin mq-lg {
-  @media (min-width: 1000px) {
+  @media (min-width: 1280px) {
     @content;
   }
 }
@@ -87,18 +87,6 @@ $counter: $items - $rows + 2;
   .card:nth-child(#{$i*2-1})   { order: $i }
   .card:nth-child(#{$i*2})     { order: $counter }
   $counter: $counter + 1;
-}
-
-/* Border Box */
-
-* {
-  box-sizing: border-box;
-}
-
-/* Fonts */
-
-body {
-  font-family: Roboto;
 }
 
 .transaction {
@@ -202,7 +190,6 @@ body {
         display: inline;
         float: left;
         margin: $inner-margin;
-        padding: 10px;
         font-size: $number-size;
         line-height: $number-size;
         font-weight: 600;
@@ -232,8 +219,6 @@ body {
     }
     .body {
       background: #fff;
-      border: $border;
-      border-top: 0;
       padding: $inner-margin;
       @include mq-lg {
         height: $body-height;
