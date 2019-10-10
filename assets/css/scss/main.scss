@@ -3,7 +3,7 @@ $textBlack: #000000;
 $orangeColor: #f5914f;
 $h2: 3.8em;
 $h3: 2.4em;
-$sectionMargin: 100px 0;
+$sectionMargin: 100px auto;
 
 %textSemiBold {
   font-weight: 600;
@@ -337,7 +337,6 @@ header {
 
   .item-img {
     img {
-      max-width: 347px;
       width: 100%;
     }
   }
