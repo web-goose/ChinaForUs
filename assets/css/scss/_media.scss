@@ -34,4 +34,13 @@
   .services-item-title{
     font-size: 18px;
   }
+
+  .whyAreWe{
+    .items{
+      .item:nth-child(2){
+        border-left: none;
+        border-right: none;
+      }
+    }
+  }
 }

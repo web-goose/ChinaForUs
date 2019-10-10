@@ -1,3 +1,9 @@
+$('.header-wrap').height(innerHeight - 80);
+
+$(window).resize(function () {
+    $('.header-wrap').height(innerHeight - 80);
+});
+
 const wow = new WOW(
     {
         boxClass: 'wow',      // animated element css class (default is wow)
@@ -13,12 +19,19 @@ wow.init();
 
 let owl = $('.owl-carousel');
 owl.owlCarousel({
-    items:3,
     loop:true,
     margin:10,
     autoplay:false,
     autoplayTimeout:1000,
-    autoplayHoverPause:true
+    autoplayHoverPause:true,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        768: {
+            items: 3,
+        }
+    }
 });
 
 
@@ -33,7 +46,6 @@ let typeCleanerInterval;
 function typeWriter() {
     typeWriterInterval = setInterval(function () {
         if(writerCount >= text.length) {
-            console.log(writerCount + '|' + text.length)
             setTimeout(function () {
                 typeCleaner();
             }, 2000);
@@ -50,7 +62,6 @@ function typeCleaner() {
     typeCleanerInterval = setInterval(function () {
         if(writerCount <= 0) {
             setTimeout(function () {
-                console.log(writerCount + '| cleaner')
                 typeWriter();
             }, 2000);
             clearInterval(typeCleanerInterval);
