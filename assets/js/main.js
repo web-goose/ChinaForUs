@@ -111,3 +111,16 @@ $(function() {
     });
 });
 
+$('#faq-list').on('show.bs.collapse', function (e) {
+    let elem = $(e.target).siblings('.card-header');
+    $(elem).css('background', '#f5914f');
+    $(elem).find('button').css('color', '#fff');
+});
+
+$('#faq-list').on('hide.bs.collapse', function (e) {
+    let elem = $(e.target).siblings('.card-header');
+    $(elem).css('background', '#fff');
+    $(elem).find('button').css('color', '#f5914f');
+
+});
+

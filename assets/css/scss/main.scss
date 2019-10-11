@@ -407,10 +407,12 @@ header {
     color: $textWhite;
   }
 
-  .items{
+  .items {
     color: $textWhite;
+
     .item {
       padding: 20px 10px;
+
       .item-count {
         font-size: 48px;
         font-weight: 700;
@@ -424,39 +426,51 @@ header {
   }
 }
 
-.reviews{
+.reviews {
   text-align: center;
-  .items{
+
+  .items {
     display: flex;
     justify-content: center;
-    .item{
+
+    .item {
       padding: 50px 20px;
       text-align: left;
-      .item-img{
-        img{
+
+      .item-img {
+        img {
           height: 121px;
           width: 120px;
           padding-bottom: 10px;
         }
       }
-      .item-name{
+
+      .item-name {
         font-size: 18px;
         font-weight: bold;
       }
-      .item-review{
+
+      .item-review {
         line-height: 32px;
         font-size: 16px;
+
+        a {
+          text-decoration: underline;
+        }
       }
-      .item-stars{
+
+      .item-stars {
         padding-top: 10px;
-        svg{
+
+        svg {
           height: 20px;
           fill: #f5914f;
         }
       }
     }
   }
-  .reviews-button{
+
+  .reviews-button {
     margin-top: 20px;
     background: $orangeColor;
     border: 2px solid $orangeColor;
@@ -470,6 +484,44 @@ header {
     &:hover {
       background: #fff;
       color: $orangeColor;
+    }
+  }
+}
+
+.faq {
+  .card{
+    margin-top: 5px;
+    .card-header {
+      border: 2px solid $orangeColor !important;
+      background: #fff;
+      transition: .3s;
+      button{
+        text-decoration: none;
+        color: $orangeColor;
+      }
+    }
+    .card-body{
+      font-size: 16px;
+    }
+  }
+
+  .section-info {
+    text-align: center;
+    .faq-btn-more {
+      background: #fff;
+      margin-top: 20px;
+      border: 2px solid $orangeColor;
+      text-transform: uppercase;
+      color: $orangeColor;
+      padding: 16px 55px;
+      font-size: 1.6em;
+      transition: .5s;
+      @extend %textBold;
+
+      &:hover {
+        background: $orangeColor;
+        color: #fff;
+      }
     }
   }
 }
