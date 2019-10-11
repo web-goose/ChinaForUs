@@ -1,0 +1,8 @@
+{
+    "scripts": {
+        "scss": "node-sass -w user/themes/chinaforus/scss/main.scss user/themes/chinaforus/css/main.css"
+    },
+    "dependencies": {
+        "node-sass": "^4.12.0"
+    }
+}

@@ -1,0 +1,12 @@
+node_modules
+composer.lock
+source
+assets/
+backup/
+logs/
+images/
+cache/
+user/accounts
+user/data
+user/themes/quark
+bash.sh

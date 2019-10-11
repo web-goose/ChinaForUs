@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
+    <head>
+        {% block head %}
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            {% if header.description %}
+                <meta name="description" content="{{ header.description }}">
+            {% else %}
+                <meta name="description" content="{{ site.metadata.description }}">
+            {% endif %}
+            {% if header.robots %}
+                <meta name="robots" content="{{ header.robots }}">
+            {% endif %}
+            <meta name="keywords" content="{{ site.metadata.keywords }}">
+            <meta name="Author" content="{{ site.author.name }}">
+            <title>
+                {% if header.title %}
+                    {{ header.title }}
+                    |
+                {% endif %}
+                {{ site.title }}
+            </title>
+
+            {% block stylesheets %}
+
+                {% do assets.addCss('theme://css/bootstrap.min.css', 101) %}
+                {% do assets.addCss('theme://css/animate.css', 100) %}
+                {% do assets.addCss('theme://css/owl.carousel.min.css', 100) %}
+                {% do assets.addCss('theme://css/main.css', 100) %}
+
+                {{ assets.css() }}
+            {% endblock %}
+
+            <link rel="icon" type="image/png" href="{{ url('theme://img/favicon.png') }}"/>
+        {% endblock head %}
+    </head>
+    <body>
+
+        {% block header %}
+            {% include 'partials/header.html.twig' %}
+        {% endblock %}
+
+        {% block content %}{% endblock %}
+
+        {% block footer %}
+            {% include 'partials/footer.html.twig' %}
+        {% endblock %}
+
+        {% block javascripts %}
+
+            {% do assets.addJs('theme://js/jquery-3.4.1.min.js', 101) %}
+            {% do assets.addJs('theme://js/bootstrap.min.js', 101) %}
+            {% do assets.addJs('theme://js/wow.min.js', 101) %}
+            {% do assets.addJs('theme://js/owl.carousel.min.js', 101) %}
+            {% do assets.addJs('theme://js/main.js', 101) %}
+            {#  <script src="//code.jivosite.com/widget.js" data-jv-id="Qmn8krdLMR" async></script> #}
+
+            {{ assets.js() }}
+        {% endblock %}
+    </body>
+</html>
