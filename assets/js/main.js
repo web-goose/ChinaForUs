@@ -96,5 +96,18 @@ function countStart(start, end, i, delay) {
         }
     }, delay);
 }
-calcCount();
+
+$(function() {
+    const blockTop = $('.doubt').offset().top;
+    let CountUpFlag = false;
+    const $window = $(window);
+    $window.on('load scroll', function() {
+        const top = $window.scrollTop();
+        const height = $window.height();
+        if (top + height >= blockTop && CountUpFlag === false) {
+            calcCount();
+            CountUpFlag = true;
+        }
+    });
+});
 
