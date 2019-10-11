@@ -37,12 +37,12 @@ section {
   }
 
   .section_title {
-    font-size: 38px;
+    font-size: 3.8em;
     @extend %textSemiBold;
   }
 
   .section_desc {
-    font-size: 24px;
+    font-size: 2.4em;
     padding-top: 40px;
   }
 }
@@ -408,7 +408,6 @@ header {
   }
 
   .items{
-    text-align: center;
     color: $textWhite;
     .item {
       padding: 20px 10px;
@@ -421,6 +420,56 @@ header {
         font-size: 18px;
         font-weight: 300;
       }
+    }
+  }
+}
+
+.reviews{
+  text-align: center;
+  .items{
+    display: flex;
+    justify-content: center;
+    .item{
+      padding: 50px 20px;
+      text-align: left;
+      .item-img{
+        img{
+          height: 121px;
+          width: 120px;
+          padding-bottom: 10px;
+        }
+      }
+      .item-name{
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .item-review{
+        line-height: 32px;
+        font-size: 16px;
+      }
+      .item-stars{
+        padding-top: 10px;
+        svg{
+          height: 20px;
+          fill: #f5914f;
+        }
+      }
+    }
+  }
+  .reviews-button{
+    margin-top: 20px;
+    background: $orangeColor;
+    border: 2px solid $orangeColor;
+    text-transform: uppercase;
+    color: $textWhite;
+    padding: 16px 55px;
+    font-size: 1.6em;
+    transition: .5s;
+    @extend %textBold;
+
+    &:hover {
+      background: #fff;
+      color: $orangeColor;
     }
   }
 }
