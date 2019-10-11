@@ -1,9 +1,5 @@
 $('.header-wrap').height(innerHeight - 80);
 
-$(window).resize(function () {
-    $('.header-wrap').height(innerHeight - 80);
-});
-
 const wow = new WOW(
     {
         boxClass: 'wow',      // animated element css class (default is wow)
@@ -19,11 +15,11 @@ wow.init();
 
 let owl = $('.owl-carousel');
 owl.owlCarousel({
-    loop:true,
-    margin:10,
-    autoplay:false,
-    autoplayTimeout:1000,
-    autoplayHoverPause:true,
+    loop: true,
+    margin: 10,
+    autoplay: false,
+    autoplayTimeout: 1000,
+    autoplayHoverPause: true,
     responsive: {
         0: {
             items: 1,
@@ -43,9 +39,10 @@ const text = "время и деньги";
 let writerCount = 0;
 let typeWriterInterval;
 let typeCleanerInterval;
+
 function typeWriter() {
     typeWriterInterval = setInterval(function () {
-        if(writerCount >= text.length) {
+        if (writerCount >= text.length) {
             setTimeout(function () {
                 typeCleaner();
             }, 2000);
@@ -54,13 +51,13 @@ function typeWriter() {
         }
         $('.typewriter').text($('.typewriter').text() + text[writerCount]);
         writerCount++;
-    },100);
+    }, 100);
 }
 
 function typeCleaner() {
     clearInterval(typeWriterInterval);
     typeCleanerInterval = setInterval(function () {
-        if(writerCount <= 0) {
+        if (writerCount <= 0) {
             setTimeout(function () {
                 typeWriter();
             }, 2000);
@@ -70,9 +67,34 @@ function typeCleaner() {
 
         $('.typewriter').text($('.typewriter').text().slice(0, -1));
         writerCount--;
-    },100);
+    }, 100);
 }
 
 (function () {
     typeWriter();
 }());
+
+// $(window).scroll(function () {
+//    if($(window).offset().top == $('.item-count').offset().top)
+//        console.log(123);
+// });
+
+function calcCount() {
+    for (let i = 0; i < $('.item-count').length; i++) {
+        let start = $('.item-count').eq(i).attr('data-min');
+        let end = $('.item-count').eq(i).attr('data-max');
+        let delay = $('.item-count').eq(i).attr('data-delay');
+        countStart(start, end, i, delay);
+    }
+}
+
+function countStart(start, end, i, delay) {
+    let interval = setInterval(function () {
+        $('.item-count').eq(i).text(++start);
+        if (start == end) {
+            clearInterval(interval);
+        }
+    }, delay);
+}
+calcCount();
+
