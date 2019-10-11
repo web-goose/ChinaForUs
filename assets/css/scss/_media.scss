@@ -1,51 +1,65 @@
-@media all and (max-width: 768px){
-  body{
+@media all and (max-width: 768px) {
+  body {
     font-size: 9px;
   }
-  .header-nav{
+  .header-nav {
     text-align: center !important;
     padding: 5px 15px !important;
     height: auto !important;
-    .header-logo{
+
+    .header-logo {
       height: 45px !important;
     }
+
     .header-nav-item:first-child {
       padding-left: 15px !important;
     }
   }
 
-  .header-wrap{
+  .header-wrap {
     height: 528px;
     padding-top: 15px;
 
-    .header-wrap-title{
+    .header-wrap-title {
       font-size: 5em !important;
     }
-    .header-wrap-desc{
+
+    .header-wrap-desc {
       margin: 20px 0;
     }
-    .header-wrap-btn{
+
+    .header-wrap-btn {
       margin-top: 30px;
       margin-bottom: 30px;
     }
-    .header-wrap-arrow{
+
+    .header-wrap-arrow {
       visibility: hidden;
     }
-    .header-wrap-info{
+
+    .header-wrap-info {
       padding: 0 20px;
     }
   }
 
-  .services-item-title{
+  .services-item-title {
     font-size: 18px;
   }
 
-  .whyAreWe{
-    .items{
-      .item:nth-child(2){
+  .whyAreWe {
+    .items {
+      .item:nth-child(2) {
         border-left: none;
         border-right: none;
       }
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  .callback {
+    .callback-email, .callback-name {
+      width: 100% !important;
     }
   }
 }

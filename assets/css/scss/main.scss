@@ -399,9 +399,10 @@ header {
 }
 
 .doubt {
-  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("../../img/doubt/bg.jpg") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../../img/doubt/bg.jpg") no-repeat fixed;
   background-size: cover;
-  padding: 100px 20px;
+  padding: 60px 20px 50px 20px;
+  text-align: center;
 
   .section-info {
     color: $textWhite;
@@ -489,24 +490,29 @@ header {
 }
 
 .faq {
-  .card{
+  .card {
     margin-top: 5px;
+
     .card-header {
       border: 2px solid $orangeColor !important;
       background: #fff;
       transition: .3s;
-      button{
+
+      button {
         text-decoration: none;
         color: $orangeColor;
       }
     }
-    .card-body{
+
+    .card-body {
       font-size: 16px;
     }
   }
 
   .section-info {
     text-align: center;
+    padding-bottom: 0;
+
     .faq-btn-more {
       background: #fff;
       margin-top: 20px;
@@ -521,6 +527,124 @@ header {
       &:hover {
         background: $orangeColor;
         color: #fff;
+      }
+    }
+  }
+}
+
+
+.callback {
+  padding: 0 20px;
+
+  .form {
+    .callback-textarea {
+      width: 100%;
+
+      .js-callback-textarea {
+        width: inherit;
+        height: 300px;
+        border-radius: 5px;
+        border: 1px solid #DBDBDB;
+        padding: 10px;
+        color: #9B9B9B;
+        font-size: 16px;
+      }
+    }
+
+    .callback-email, .callback-name {
+      width: 49%;
+
+      input {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #DBDBDB;
+        padding: 10px;
+        color: #9B9B9B;
+        font-size: 16px;
+      }
+    }
+
+    .js-callback-btn {
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #fff;
+      background: $orangeColor;
+      border: 2px solid $orangeColor;
+      padding: 15px 30px;
+      transition: .3s;
+
+      &:hover {
+        color: $orangeColor;
+        background: #fff;
+      }
+    }
+  }
+
+  .callback-title {
+    font-size: 16px;
+    @extend %textSemiBold;
+  }
+
+  .callback-desc {
+    padding-top: 10px;
+    font-size: 14px;
+    font-width: 300;
+  }
+}
+
+
+footer {
+  background: #111111;
+  padding: 100px 20px;
+
+  .footer-logo img {
+    width: 100%;
+  }
+
+  .footer-soc {
+    padding: 15px 0;
+    a{
+      text-decoration: none;
+    }
+    svg {
+      margin: 0 5px;
+      height: 40px;
+      width: 40px;
+      transition: .3s;
+      fill: #5A5A5A;
+      &:hover {
+        fill: #4A4A4A;
+      }
+    }
+  }
+
+  .footer-copyright {
+    font-weight: 300;
+    font-size: 14px;
+    color: #525252;
+  }
+
+  .menu-title{
+    font-size: 16px;
+    color: #52524F;
+    @extend %textSemiBold;
+  }
+
+  .menu{
+    list-style-type: none;
+    padding: 0;
+    li{
+      padding: 5px 0;
+      a {
+        font-size: 14px;
+        font-weight: 300;
+        color: #fff;
+        transition: .3s;
+        text-decoration: none;
+        &:hover{
+          color: $orangeColor;
+        }
       }
     }
   }
