@@ -29,7 +29,7 @@ section {
 .section-info {
   max-width: 600px;
   margin: 0 auto;
-  padding-bottom: 100px;
+  padding: 0 10px 100px 10px;
   color: $textBlack;
 
   .section_title, .section_desc {
@@ -37,12 +37,12 @@ section {
   }
 
   .section_title {
-    font-size: 3.8em;
+    font-size: 3.6em;
     @extend %textSemiBold;
   }
 
   .section_desc {
-    font-size: 2.4em;
+    font-size: 2.2em;
     padding-top: 40px;
   }
 }
@@ -52,7 +52,7 @@ section {
 
 header {
   background: url("../../img/all/bg.jpeg") center;
-  background-size: cover;
+  background-size: cover !important;
 
   .header-nav {
     background: rgba(0, 0, 0, 0.5);
@@ -94,7 +94,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 576px;
+    height: calc(100vh - 60px);
     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6));
 
     .header-wrap-info {
@@ -646,6 +646,24 @@ footer {
           color: $orangeColor;
         }
       }
+    }
+  }
+}
+
+
+.contacts{
+  margin: 0;
+  padding: 50px 0;
+  background: #EBEBEB;
+  .section-info{
+    padding-bottom: 20px !important;
+  }
+
+  .wrap-info{
+    font-size: 20px;
+    a{
+      color: $textBlack;
+      text-decoration: underline;
     }
   }
 }

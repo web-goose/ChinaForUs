@@ -1,0 +1,35 @@
+.search {
+  padding: 0;
+  margin: 0;
+  .items {
+    .section-title {
+      padding: 100px 0;
+      font-size: 3em;
+      font-weight: 300;
+    }
+
+    .item {
+      .item-info {
+        padding: 20px 20px;
+        h3 {
+          font-size: 2.6em;
+          font-weight: 700;
+          padding-bottom: 15px;
+        }
+
+        p {
+          font-size: 1.8em;
+        }
+      }
+
+      img{
+        border-radius: 15px;
+        width: 100%;
+      }
+    }
+  }
+
+  .services-item{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../../../img/services/2.jpg') center center no-repeat;
+  }
+}

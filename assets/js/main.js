@@ -1,5 +1,3 @@
-$('.header-wrap').height(innerHeight - 80);
-
 const wow = new WOW(
     {
         boxClass: 'wow',      // animated element css class (default is wow)
@@ -73,11 +71,6 @@ function typeCleaner() {
 (function () {
     typeWriter();
 }());
-
-// $(window).scroll(function () {
-//    if($(window).offset().top == $('.item-count').offset().top)
-//        console.log(123);
-// });
 
 function calcCount() {
     for (let i = 0; i < $('.item-count').length; i++) {
