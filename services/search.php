@@ -10,7 +10,7 @@ getHeader('Поиск', 'Поиск', 'Товаров и поставщиков'
                     предлагает выгодные цены на нужный вам товар без ущерба его <b>качеству</b>.
                 </div>
             </div>
-            <div class="col-12 item">
+            <div class="col-12 item wow fadeIn" data-wow-delay=".3s">
                 <div class="row">
                     <div class="col-md-6 col-12 item-info"><h3>Анализ рынка поставщиков:</h3>
                         <p>По вашему запросу мы оцениваем предложения поставщиков на внутренних электронных площадках и
@@ -22,7 +22,7 @@ getHeader('Поиск', 'Поиск', 'Товаров и поставщиков'
                     </div>
                 </div>
             </div>
-            <div class="col-12 item">
+            <div class="col-12 item wow fadeIn" data-wow-delay=".3s">
                 <div class="row">
                     <div class="col-md-6 col-12 order-md-0 order-1">
                         <img src="img/search/2.jpg" alt="2">
@@ -38,7 +38,10 @@ getHeader('Поиск', 'Поиск', 'Товаров и поставщиков'
                     </div>
                 </div>
             </div>
-            <div class="col-12 text-center">
+            <div class="col-12 text-center wow fadeIn" data-wow-delay=".3s">
+                <button class="main-btn">Заполнить заявку на услугу</button>
+            </div>
+            <div class="col-12 text-center wow fadeIn" data-wow-delay=".3s">
                 <div class="section-title">Для выбора нужного поставщика, следующим шагом мы заказываем <b>образцы</b> его
                     продукции, чтобы убедиться в заявленном качестве.
                 </div>

@@ -1,22 +1,46 @@
-.search {
+.search, .inspection, .foto-na-listing, .uslugi sklada, .uslugi-sklada, .logistika {
   padding: 0;
   margin: 0; }
-  .search .items .section-title {
+  .search .items .section-title, .inspection .items .section-title, .foto-na-listing .items .section-title, .uslugi sklada .items .section-title, .uslugi-sklada .items .section-title, .logistika .items .section-title {
     padding: 100px 0;
     font-size: 3em;
     font-weight: 300; }
-  .search .items .item .item-info {
-    padding: 20px 20px; }
-    .search .items .item .item-info h3 {
-      font-size: 2.6em;
-      font-weight: 700;
-      padding-bottom: 15px; }
-    .search .items .item .item-info p {
-      font-size: 1.8em; }
-  .search .items .item img {
-    border-radius: 15px;
-    width: 100%; }
-  .search .services-item {
+  .search .items .item, .inspection .items .item, .foto-na-listing .items .item, .uslugi sklada .items .item, .uslugi-sklada .items .item, .logistika .items .item {
+    padding-top: 40px; }
+    .search .items .item .item-info, .inspection .items .item .item-info, .foto-na-listing .items .item .item-info, .uslugi sklada .items .item .item-info, .uslugi-sklada .items .item .item-info, .logistika .items .item .item-info {
+      padding: 20px 20px; }
+      .search .items .item .item-info h3, .inspection .items .item .item-info h3, .foto-na-listing .items .item .item-info h3, .uslugi sklada .items .item .item-info h3, .uslugi-sklada .items .item .item-info h3, .logistika .items .item .item-info h3 {
+        font-size: 2.6em;
+        font-weight: 700;
+        padding-bottom: 15px; }
+      .search .items .item .item-info p, .inspection .items .item .item-info p, .foto-na-listing .items .item .item-info p, .uslugi sklada .items .item .item-info p, .uslugi-sklada .items .item .item-info p, .logistika .items .item .item-info p {
+        font-size: 1.8em; }
+    .search .items .item img, .inspection .items .item img, .foto-na-listing .items .item img, .uslugi sklada .items .item img, .uslugi-sklada .items .item img, .logistika .items .item img {
+      border-radius: 15px;
+      width: 100%;
+      max-height: 500px; }
+  .search .services-item, .inspection .services-item, .foto-na-listing .services-item, .uslugi sklada .services-item, .uslugi-sklada .services-item, .logistika .services-item {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../../../img/services/2.jpg") center center no-repeat; }
 
-/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAic2VydmljZXMuY3NzIiwKCSJzb3VyY2VzIjogWwoJCSJzZXJ2aWNlcy5zY3NzIgoJXSwKCSJuYW1lcyI6IFtdLAoJIm1hcHBpbmdzIjogIkFBQUEsQUFBQSxPQUFPLENBQUM7RUFDTixPQUFPLEVBQUUsQ0FBQztFQUNWLE1BQU0sRUFBRSxDQUFDLEdBZ0NWO0VBbENELEFBSUksT0FKRyxDQUdMLE1BQU0sQ0FDSixjQUFjLENBQUM7SUFDYixPQUFPLEVBQUUsT0FBTztJQUNoQixTQUFTLEVBQUUsR0FBRztJQUNkLFdBQVcsRUFBRSxHQUFHLEdBQ2pCO0VBUkwsQUFXTSxPQVhDLENBR0wsTUFBTSxDQU9KLEtBQUssQ0FDSCxVQUFVLENBQUM7SUFDVCxPQUFPLEVBQUUsU0FBUyxHQVVuQjtJQXRCUCxBQWFRLE9BYkQsQ0FHTCxNQUFNLENBT0osS0FBSyxDQUNILFVBQVUsQ0FFUixFQUFFLENBQUM7TUFDRCxTQUFTLEVBQUUsS0FBSztNQUNoQixXQUFXLEVBQUUsR0FBRztNQUNoQixjQUFjLEVBQUUsSUFBSSxHQUNyQjtJQWpCVCxBQW1CUSxPQW5CRCxDQUdMLE1BQU0sQ0FPSixLQUFLLENBQ0gsVUFBVSxDQVFSLENBQUMsQ0FBQztNQUNBLFNBQVMsRUFBRSxLQUFLLEdBQ2pCO0VBckJULEFBd0JNLE9BeEJDLENBR0wsTUFBTSxDQU9KLEtBQUssQ0FjSCxHQUFHLENBQUE7SUFDRCxhQUFhLEVBQUUsSUFBSTtJQUNuQixLQUFLLEVBQUUsSUFBSSxHQUNaO0VBM0JQLEFBK0JFLE9BL0JLLENBK0JMLGNBQWMsQ0FBQTtJQUNaLFVBQVUsRUFBRSx1REFBdUQsRUFBRSxxQ0FBcUMsQ0FBQyxNQUFNLENBQUMsTUFBTSxDQUFDLFNBQVMsR0FDbkkiCn0= */
+.overview-block1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/overview/2.jpg") no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  color: #fff;
+  font-size: 3em;
+  font-weight: 300;
+  text-align: center; }
+
+.overview-block3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/overview/2.jpg") no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center; }
+  .overview-block3 .desc {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 300; }
+  .overview-block3 .main-btn {
+    font-size: 1.6em; }
+
+/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAic2VydmljZXMuY3NzIiwKCSJzb3VyY2VzIjogWwoJCSJzZXJ2aWNlcy5zY3NzIgoJXSwKCSJuYW1lcyI6IFtdLAoJIm1hcHBpbmdzIjogIkFBQ0EsQUFBQSxPQUFPLEVBQUUsV0FBVyxFQUFFLGdCQUFnQixFQUFFLE9BQU8sQ0FBQyxNQUFNLEVBQUUsY0FBYyxFQUFFLFVBQVUsQ0FBQztFQUNqRixPQUFPLEVBQUUsQ0FBQztFQUNWLE1BQU0sRUFBRSxDQUFDLEdBb0NWO0VBdENELEFBS0ksT0FMRyxDQUlMLE1BQU0sQ0FDSixjQUFjLEVBTFQsV0FBVyxDQUlsQixNQUFNLENBQ0osY0FBYyxFQUxJLGdCQUFnQixDQUlwQyxNQUFNLENBQ0osY0FBYyxFQUxzQixPQUFPLENBQUMsTUFBTSxDQUlwRCxNQUFNLENBQ0osY0FBYyxFQUxzQyxjQUFjLENBSXBFLE1BQU0sQ0FDSixjQUFjLEVBTHNELFVBQVUsQ0FJaEYsTUFBTSxDQUNKLGNBQWMsQ0FBQztJQUNiLE9BQU8sRUFBRSxPQUFPO0lBQ2hCLFNBQVMsRUFBRSxHQUFHO0lBQ2QsV0FBVyxFQUFFLEdBQUcsR0FDakI7RUFUTCxBQVdJLE9BWEcsQ0FJTCxNQUFNLENBT0osS0FBSyxFQVhBLFdBQVcsQ0FJbEIsTUFBTSxDQU9KLEtBQUssRUFYYSxnQkFBZ0IsQ0FJcEMsTUFBTSxDQU9KLEtBQUssRUFYK0IsT0FBTyxDQUFDLE1BQU0sQ0FJcEQsTUFBTSxDQU9KLEtBQUssRUFYK0MsY0FBYyxDQUlwRSxNQUFNLENBT0osS0FBSyxFQVgrRCxVQUFVLENBSWhGLE1BQU0sQ0FPSixLQUFLLENBQUM7SUFDSixXQUFXLEVBQUUsSUFBSSxHQW9CbEI7SUFoQ0wsQUFhTSxPQWJDLENBSUwsTUFBTSxDQU9KLEtBQUssQ0FFSCxVQUFVLEVBYlAsV0FBVyxDQUlsQixNQUFNLENBT0osS0FBSyxDQUVILFVBQVUsRUFiTSxnQkFBZ0IsQ0FJcEMsTUFBTSxDQU9KLEtBQUssQ0FFSCxVQUFVLEVBYndCLE9BQU8sQ0FBQyxNQUFN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 */

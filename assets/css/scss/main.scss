@@ -26,6 +26,7 @@ section {
   margin: $sectionMargin;
 }
 
+
 .section-info {
   max-width: 600px;
   margin: 0 auto;
@@ -44,6 +45,23 @@ section {
   .section_desc {
     font-size: 2.2em;
     padding-top: 40px;
+  }
+}
+
+.main-btn{
+  margin-top: 40px;
+  background: $orangeColor;
+  border: 2px solid $orangeColor;
+  text-transform: uppercase;
+  color: $textWhite;
+  padding: 16px 55px;
+  font-size: 1.6em;
+  transition: .5s;
+  @extend %textBold;
+
+  &:hover {
+    background: #fff;
+    color: $orangeColor;
   }
 }
 
