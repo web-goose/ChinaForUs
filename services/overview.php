@@ -22,7 +22,7 @@ getHeader('Обзор / Тест / Испытание', 'Обзор / Тест /
     <div class="container">
         <div class="row">
             <div class="col-12 text-center wow fadeInUp" data-wow-delay=".3s">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/aqYnMSUTFGU" frameborder="0"
+                <iframe style="max-width: 560px; width: 100%;" height="315" src="https://www.youtube.com/embed/aqYnMSUTFGU" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
             </div>
