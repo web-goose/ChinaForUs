@@ -1,8 +1,8 @@
 <?
 include "partials.php";
-getHeader('Услуги склада', 'услуги склада', 'Мы находимся и имеем несколько складов в Китае', 'img/uslugi-sklada/bg.jpg');
+getHeader('Услуги склада', 'Услуги склада', 'Мы находимся и имеем несколько складов в Китае', 'img/uslugi-sklada/bg.jpg');
 ?>
-<section class="uslugi-sklada">
+<section class="uslugi-sklada uid-1">
     <div class="container">
         <div class="row items">
             <div class="col-12 item wow fadeIn" data-wow-delay=".3s">

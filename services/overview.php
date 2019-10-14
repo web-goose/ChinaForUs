@@ -22,7 +22,8 @@ getHeader('Обзор / Тест / Испытание', 'Обзор / Тест /
     <div class="container">
         <div class="row">
             <div class="col-12 text-center wow fadeInUp" data-wow-delay=".3s">
-                <iframe style="max-width: 560px; width: 100%;" height="315" src="https://www.youtube.com/embed/aqYnMSUTFGU" frameborder="0"
+                <iframe style="max-width: 560px; width: 100%;" height="315"
+                        src="https://www.youtube.com/embed/aqYnMSUTFGU" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
             </div>
@@ -34,12 +35,10 @@ getHeader('Обзор / Тест / Испытание', 'Обзор / Тест /
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="desc wow fadeInLeft" data-wow-delay=".3s">Чтобы убедиться в заявленном поставщиком качестве товара, необходимо заказать у
-                    выбранных поставщиков образцы их продукции. По вашему желанию мы можем консолидировать и отправить
-                    их на
-                    указанный вами адрес или же провести обзор, при необходимости тесты и испытания образцов на нашем
-                    складе
-                    в Китае, что экономит средства на доставку и, главное, ваше время.
+                <div class="desc wow fadeInLeft" data-wow-delay=".3s">Результаты обзора товара включают фото и видео
+                    материалы, при необходимости частичный или полный разбор товара, проверку его функциональности,
+                    необходимые тесты и, если требуется, лабораторные испытания. В итоговом заключении также будет дана
+                    оценка и рекомендации, основанные на нашем опыте.
                 </div>
                 <button class="main-btn wow fadeInRight" data-wow-delay=".3s">Заполнить заявку на услугу</button>
             </div>

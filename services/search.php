@@ -2,7 +2,7 @@
 include "partials.php";
 getHeader('Поиск', 'Поиск', 'Товаров и поставщиков', 'img/search/bg.jpg');
 ?>
-<section class="search">
+<section class="search uid-1">
     <div class="container">
         <div class="row items">
             <div class="col-12 text-center">
@@ -12,7 +12,7 @@ getHeader('Поиск', 'Поиск', 'Товаров и поставщиков'
             </div>
             <div class="col-12 item wow fadeIn" data-wow-delay=".3s">
                 <div class="row">
-                    <div class="col-md-6 col-12 item-info"><h3>Анализ рынка поставщиков:</h3>
+                    <div class="col-md-6 col-12 item-info"><h3>Анализ рынка поставщиков</h3>
                         <p>По вашему запросу мы оцениваем предложения поставщиков на внутренних электронных площадках и
                             рынках
                             Китая, сравнивая цены и анализируя отзывы выбирая самый оптимальный для вас вариант.</p>
@@ -27,7 +27,7 @@ getHeader('Поиск', 'Поиск', 'Товаров и поставщиков'
                     <div class="col-md-6 col-12 order-md-0 order-1">
                         <img src="img/search/2.jpg" alt="2">
                     </div>
-                    <div class="col-md-6 col-12 item-info"><h3>Сравнительный анализ и выбор поставщика:</h3>
+                    <div class="col-md-6 col-12 item-info"><h3>Сравнительный анализ и выбор поставщика</h3>
                         <p>После анализа рынка сравниваем поставщиков по заранее отобранным критериям:
                             - цена и качество продукции;
                             - заявленные обязательства по срокам, ассортименту, комплектности, количеству поставляемой
@@ -43,7 +43,7 @@ getHeader('Поиск', 'Поиск', 'Товаров и поставщиков'
             </div>
             <div class="col-12 text-center wow fadeIn" data-wow-delay=".3s">
                 <div class="section-title">Для выбора нужного поставщика, следующим шагом мы заказываем <b>образцы</b> его
-                    продукции, чтобы убедиться в заявленном качестве.
+                    продукции, чтобы убедиться в заявленном качестве:
                 </div>
             </div>
         </div>

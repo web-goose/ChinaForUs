@@ -1,6 +1,6 @@
 <?
 include "partials.php";
-getHeader('Консолидация', 'консолидация', 'Сборка товаров/образцов: консолидация по формуле 5+5+', 'img/konsolidaciya/bg.jpg');
+getHeader('Консолидация', 'Консолидация', 'Сборка товаров/образцов: консолидация по формуле 5+5+', 'img/konsolidaciya/bg.jpg');
 ?>
 <section class="inspection">
     <div class="container">

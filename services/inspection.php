@@ -2,7 +2,7 @@
 include "partials.php";
 getHeader('Инспекция', 'Инспекция', 'Фабрик (до и во время производства), партий товара', 'img/inspection/bg.jpg');
 ?>
-<section class="inspection">
+<section class="inspection uid-1">
     <div class="container">
         <div class="row items">
             <div class="col-12 text-center wow fadeIn" data-wow-delay=".3s">
@@ -69,25 +69,8 @@ getHeader('Инспекция', 'Инспекция', 'Фабрик (до и в�
             </div>
         </div>
     </div>
-
-    <div class="services">
-        <div class="container-fluid text-center">
-            <div class="row services-items">
-                <div class="col-xl-3 col-lg-6 col-md-6 col-12 services-item wow fadeIn" data-wow-delay=".3s">
-                    <div class="services-item-shade"></div>
-                    <div class="services-item-info">
-                        <div class="services-item-info-inner">
-                            <div class="wrap">
-                                <div class="services-item-title">Обзор/тест/испытание образцов товара</div>
-                                <div class="services-item-desc">Тест/полный обзор образцов товара</div>
-                                <div class="services-item-btn"><a href="">Подробнее</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="main-btn">Заполнить заявку на услугу</button>
-        </div>
+    <div class="col-12 text-center">
+        <button class="main-btn">Заполнить заявку на услугу</button>
     </div>
 </section>
 <?

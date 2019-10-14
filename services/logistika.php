@@ -2,7 +2,7 @@
 include "partials.php";
 getHeader('Логистика', 'Логистика', 'Сборка товаров/образцов: консолидация по формуле 5+5+', 'img/logistika/bg.jpg');
 ?>
-<section class="logistika">
+<section class="logistika uid-1">
     <div class="container">
         <div class="row items">
 

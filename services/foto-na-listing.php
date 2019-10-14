@@ -2,7 +2,7 @@
 include "partials.php";
 getHeader('Фото на листинг', 'Фото на листинг', 'Предметная фотосъемка товаров', 'img/foto-na-listing/bg.jpg');
 ?>
-<section class="foto-na-listing">
+<section class="foto-na-listing uid-1">
     <div class="container">
         <div class="row items text-center">
             <div class="col-12 text-center wow fadeIn" data-wow-delay=".3s">
