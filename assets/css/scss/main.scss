@@ -320,7 +320,7 @@ header {
 .activity {
   padding: 100px 0;
   color: $textWhite;
-  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../../img/all/bg.jpeg") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../../img/all/bg.jpeg") center no-repeat fixed;
   background-size: cover;
   font-weight: 100;
 
@@ -461,6 +461,7 @@ header {
           height: 121px;
           width: 120px;
           padding-bottom: 10px;
+          border-radius: 30px
         }
       }
 

@@ -17,13 +17,6 @@ function getHeader($title, $wrapTitle, $wrapDesc, $bgUrl)
     <link rel="stylesheet" href="../assets/css/animate.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="assets/css/services.css">
-    <style>
-    @media screen all (max-width: 768px){
-    .header-wrap{
-    height: calc(100vh - 40px - 50%);
-    }
-    }
-</style>
 </head>
 <body>
 <header style="background: url($bgUrl) 10% 60%">

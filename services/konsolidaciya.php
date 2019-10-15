@@ -2,7 +2,7 @@
 include "partials.php";
 getHeader('Консолидация', 'Консолидация', 'Сборка товаров/образцов: консолидация по формуле 5+5+', 'img/konsolidaciya/bg.jpg');
 ?>
-<section class="inspection">
+<section class="konsolidaciya uid-1">
     <div class="container">
         <div class="row items">
             <div class="col-12 item wow fadeIn" data-wow-delay=".3s">

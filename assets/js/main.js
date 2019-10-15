@@ -33,7 +33,8 @@ function scrollToAnchor(anchorName) {
     $('html, body').stop().animate({scrollTop: $(anchorName).offset().top}, 1000);
 }
 
-const text = "время и деньги";
+const text = $('.typewriter').text();
+$('.typewriter').text('');
 let writerCount = 0;
 let typeWriterInterval;
 let typeCleanerInterval;

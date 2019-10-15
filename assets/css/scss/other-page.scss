@@ -1,0 +1,27 @@
+@media screen and (max-width: 768px) {
+  .header-wrap {
+    height: calc(100vh - 40px - 50%);
+  }
+}
+
+header.other-page {
+  .header-wrap {
+    height: calc(100vh - 80px - 40%);
+  }
+}
+
+.about-uid-2 {
+  .block {
+    text-align: center;
+    font-size: 1.8em;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+  }
+
+  .section-info{
+    padding-bottom: 0;
+    .section_desc{
+      font-size: 2.8em;
+    }
+  }
+}
