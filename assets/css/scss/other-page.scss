@@ -10,18 +10,59 @@ header.other-page {
   }
 }
 
-.about-uid-2 {
-  .block {
-    text-align: center;
-    font-size: 1.8em;
-    border-right: 1px solid gray;
-    border-left: 1px solid gray;
+.about-us-uid-1, .about-us-uid-7{
+  .left{
+    font-size: 4.8em;
+    font-weight: 600;
+    line-height: 56px;
+    padding: 20px 10px;
   }
+  .right{
+    font-size: 2.2em;
+    font-weight: 400;
+    padding: 20px 10px;
+  }
+}
 
-  .section-info{
-    padding-bottom: 0;
-    .section_desc{
-      font-size: 2.8em;
-    }
+.about-us-uid-2{
+  height: 540px;
+  background: linear-gradient(rgba(0,0,0, .4), rgba(0,0,0, .4)), url("../../img/about-us/1.jpg") center fixed no-repeat;
+  background-size: cover;
+}
+
+.about-us-uid-3, .about-us-uid-9{
+  font-size: 2.2em;
+  font-weight: 400;
+}
+
+.about-us-uid-4{
+  height: 540px;
+  background: linear-gradient(rgba(0,0,0, .4), rgba(0,0,0, .4)), url("../../img/about-us/2.jpg") center fixed no-repeat;
+  background-size: cover;
+}
+
+.about-us-uid-5{
+  font-size: 2.4em;
+  font-weight: 400;
+}
+
+.about-us-uid-6{
+  height: 540px;
+  background: linear-gradient(rgba(0,0,0, .4), rgba(0,0,0, .4)), url("../../img/about-us/3.jpg") center fixed no-repeat;
+  background-size: cover;
+}
+
+.about-us-uid-8, .about-us-uid-10{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 540px;
+  background: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url("../../img/about-us/4.jpg") center fixed no-repeat;
+  background-size: cover;
+  font-size: 3em;
+  color: #fff;
+  text-align: center;
+  p{
+    max-width: 1100px;
   }
 }

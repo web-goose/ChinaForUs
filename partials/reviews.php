@@ -9,7 +9,7 @@
                  data-delay=".3s">
                 <div class="row">
                     <div class="col-xl-4 col-lg-12 col-md-4 col-12">
-                        <div class="item-img"><img src="img/reviews/1.jpg" alt="1"></div>
+                        <div class="item-img"><img src="img/reviews/2.jpg" alt="1"></div>
                     </div>
                     <div class="col-xl-8 col-lg-12 col-md-8 col-12">
                         <div class="item-name">Сергей Уласевич</div>
@@ -42,7 +42,7 @@
                  data-delay=".3s">
                 <div class="row">
                     <div class="col-xl-4 col-lg-12 col-md-4 col-12">
-                        <div class="item-img"><img src="img/reviews/1.jpg" alt="1"></div>
+                        <div class="item-img"><img src="img/reviews/3.jpg" alt="1"></div>
                     </div>
                     <div class="col-xl-8 col-lg-12 col-md-8 col-12">
                         <div class="item-name">Denis Sulimchik</div>
@@ -77,7 +77,7 @@
                  data-delay=".3s">
                 <div class="row">
                     <div class="col-xl-4 col-lg-12 col-md-4 col-12">
-                        <div class="item-img"><img src="img/reviews/1.jpg" alt="1"></div>
+                        <div class="item-img"><img src="img/reviews/7.jpg" alt="1"></div>
                     </div>
                     <div class="col-xl-8 col-lg-12 col-md-8 col-12">
                         <div class="item-name">Nina Rudenko</div>
