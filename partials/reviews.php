@@ -5,7 +5,7 @@
 
     <div class="container-fluid">
         <div class="row items">
-            <div class="col-xl-3 col-lg-4 col-md-8 col-12 item text-md-left text-center wow zoomInDown"
+            <div class="col-lg-4 col-md-8 col-12 item text-md-left text-center wow fadeIn"
                  data-delay=".3s">
                 <div class="row">
                     <div class="col-xl-4 col-lg-12 col-md-4 col-12">
@@ -38,7 +38,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-8 col-12 item text-md-left text-center wow zoomInDown"
+            <div class="col-lg-4 col-md-8 col-12 item text-md-left text-center wow fadeIn"
                  data-delay=".3s">
                 <div class="row">
                     <div class="col-xl-4 col-lg-12 col-md-4 col-12">
@@ -73,7 +73,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-8 col-12 item text-md-left text-center wow zoomInDown"
+            <div class="col-lg-4 col-md-8 col-12 item text-md-left text-center wow fadeIn"
                  data-delay=".3s">
                 <div class="row">
                     <div class="col-xl-4 col-lg-12 col-md-4 col-12">
@@ -111,6 +111,6 @@
         </div>
     </div>
 
-    <button class="reviews-button wow zoomInDown" data-delay=".3s">Все отзывы</button>
+    <button class="reviews-button wow fadeIn" data-delay=".3s">Все отзывы</button>
 
 </section>

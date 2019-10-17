@@ -51,8 +51,7 @@
 <section class="reviews" id="reviews">
     <div class="container">
         <div class="row items">
-
-            <div class="col-12 item text-md-left text-center wow zoomInDown"
+            <div class="col-12 item text-md-left text-center wow fadeIn"
                  data-delay=".3s">
                 <div class="row">
                     <div class="col-xl-2 col-lg-2 col-md-3 col-12">
@@ -86,7 +85,7 @@
                 </div>
             </div>
 
-            <div class="col-12 item text-md-left text-center wow zoomInDown"
+            <div class="col-12 item text-md-left text-center wow fadeIn"
                  data-delay=".3s">
                 <div class="row">
                     <div class="col-xl-2 col-lg-2 col-md-3 col-12">
@@ -123,7 +122,7 @@
                 </div>
             </div>
 
-            <div class="col-12 item text-md-left text-center wow zoomInDown" data-delay=".3s">
+            <div class="col-12 item text-md-left text-center wow fadeIn" data-delay=".3s">
                 <div class="row">
                     <div class="col-xl-2 col-lg-2 col-md-3 col-12">
                         <div class="item-img"><img src="img/reviews/3.jpg" alt="3"></div>
@@ -163,7 +162,7 @@
                 </div>
             </div>
 
-            <div class="col-12 item text-md-left text-center wow zoomInDown" data-delay=".3s">
+            <div class="col-12 item text-md-left text-center wow fadeIn" data-delay=".3s">
                 <div class="row">
                     <div class="col-xl-2 col-lg-2 col-md-3 col-12">
                         <div class="item-img"><img src="img/reviews/4.jpg" alt="4"></div>
@@ -199,7 +198,7 @@
                 </div>
             </div>
 
-            <div class="col-12 item text-md-left text-center wow zoomInDown" data-delay=".3s">
+            <div class="col-12 item text-md-left text-center wow fadeIn" data-delay=".3s">
                 <div class="row">
                     <div class="col-xl-2 col-lg-2 col-md-3 col-12">
                         <div class="item-img"><img src="img/reviews/5.jpg" alt="5"></div>
@@ -232,7 +231,7 @@
                 </div>
             </div>
 
-            <div class="col-12 item text-md-left text-center wow zoomInDown" data-delay=".3s">
+            <div class="col-12 item text-md-left text-center wow fadeIn" data-delay=".3s">
                 <div class="row">
                     <div class="col-xl-2 col-lg-2 col-md-3 col-12">
                         <div class="item-img"><img src="img/reviews/6.jpg" alt="6"></div>
@@ -268,7 +267,7 @@
                 </div>
             </div>
 
-            <div class="col-12 item text-md-left text-center wow zoomInDown" data-delay=".3s">
+            <div class="col-12 item text-md-left text-center wow fadeIn" data-delay=".3s">
                 <div class="row">
                     <div class="col-xl-2 col-lg-2 col-md-3 col-12">
                         <div class="item-img"><img src="img/reviews/7.jpg" alt="7"></div>
@@ -301,7 +300,7 @@
                 </div>
             </div>
 
-            <div class="col-12 item text-md-left text-center wow zoomInDown" data-delay=".3s">
+            <div class="col-12 item text-md-left text-center wow fadeIn" data-delay=".3s">
                 <div class="row">
                     <div class="col-xl-2 col-lg-2 col-md-3 col-12">
                         <div class="item-img"><img src="img/reviews/8.jpg" alt="8"></div>
@@ -337,7 +336,7 @@
                 </div>
             </div>
 
-            <div class="col-12 item text-md-left text-center wow zoomInDown" data-delay=".3s">
+            <div class="col-12 item text-md-left text-center wow fadeIn" data-delay=".3s">
                 <div class="row">
                     <div class="col-xl-2 col-lg-2 col-md-3 col-12">
                         <div class="item-img"><img src="img/reviews/9.jpg" alt="9"></div>
@@ -369,7 +368,7 @@
                 </div>
             </div>
 
-            <div class="col-12 item text-md-left text-center wow zoomInDown" data-delay=".3s">
+            <div class="col-12 item text-md-left text-center wow fadeIn" data-delay=".3s">
                 <div class="row">
                     <div class="col-xl-2 col-lg-2 col-md-3 col-12">
                         <div class="item-img"><img src="img/reviews/10.jpg" alt="10"></div>
@@ -404,7 +403,7 @@
                 </div>
             </div>
 
-            <div class="col-12 item text-md-left text-center wow zoomInDown" data-delay=".3s">
+            <div class="col-12 item text-md-left text-center wow fadeIn" data-delay=".3s">
                 <div class="row">
                     <div class="col-xl-2 col-lg-2 col-md-3 col-12">
                         <div class="item-img"><img src="img/reviews/11.jpg" alt="11"></div>
@@ -447,7 +446,7 @@
                 </div>
             </div>
 
-            <div class="col-12 item text-md-left text-center wow zoomInDown" data-delay=".3s">
+            <div class="col-12 item text-md-left text-center wow fadeIn" data-delay=".3s">
                 <div class="row">
                     <div class="col-xl-2 col-lg-2 col-md-3 col-12">
                         <div class="item-img"><img src="img/reviews/12.jpg" alt="12"></div>

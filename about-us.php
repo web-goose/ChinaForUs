@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/css/other-page.css">
 </head>
 <body>
-<header class="other-page">
+<header class="other-page-header">
     <nav class="navbar navbar-expand-lg header-nav">
         <a class="navbar-brand" href="/"><img class="header-logo" src="img/all/logo.png" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -50,13 +50,13 @@
 </header>
 
 
-<section class="about-us-uid-1">
+<section class="about-us about-us-uid-1">
     <div class="container">
         <div class="row d-flex align-items-center">
-            <div class="col-lg-6 col-12 left text-lg-left text-center wow fadeInLeft" data-wow-delay=".3s">Все начинается
+            <div class="col-lg-6 col-12 left text-lg-left text-center wow fadeInLeft p-0" data-wow-delay=".3s">Все начинается
                 с правильного планирования
             </div>
-            <div class="col-lg-6 col-12 right text-lg-left text-center wow fadeInRight" data-wow-delay=".3s"><p>Мы знаем, насколько важно для продавца
+            <div class="col-lg-6 col-12 right text-lg-left text-center wow fadeInRight p-0" data-wow-delay=".3s"><p>Мы знаем, насколько важно для продавца
                     поддерживать уровень своих запасов.</p>
                 <p>И о последствиях, которые могут наступить, если товар не будет готов или не будет доставлен вовремя.
                     Вот почему наши специалисты работают в тесном контакте с клиентами и поставщиками, планируя всю
@@ -67,9 +67,9 @@
     </div>
 </section>
 
-<section class="about-us-uid-2"></section>
+<section class="about-us about-us-uid-2"></section>
 
-<section class="about-us-uid-3">
+<section class="about-us about-us-uid-3">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-12 left text-lg-left text-center wow fadeInLeft" data-wow-delay=".3s"><b>Расходы</b> на доставку также не должны влиять
@@ -85,9 +85,9 @@
     </div>
 </section>
 
-<section class="about-us-uid-4"></section>
+<section class="about-us about-us-uid-4"></section>
 
-<section class="about-us-uid-5">
+<section class="about-us about-us-uid-5">
     <div class="container">
         <div class="row">
             <div class="col-12 left text-center wow fadeInUp" data-wow-delay=".3s">Наши комплексные решения по поиску поставщиков, контролю
@@ -98,15 +98,15 @@
         </div>
 </section>
 
-<section class="about-us-uid-6"></section>
+<section class="about-us about-us-uid-6"></section>
 
-<section class="about-us-uid-7">
+<section class="about-us about-us-uid-7">
     <div class="container">
         <div class="row d-flex align-items-center">
-            <div class="col-lg-6 col-12 left text-lg-left text-center wow fadeInLeft" data-wow-delay=".3s">Мы не предлагаем услуги, которые вам на самом
+            <div class="col-lg-6 col-12 left text-lg-left text-center wow fadeInLeft p-0" data-wow-delay=".3s">Мы не предлагаем услуги, которые вам на самом
                 деле не нужны
             </div>
-            <div class="col-lg-6 col-12 right text-lg-left text-center wow fadeInRight" data-wow-delay=".3s"><p>Благодаря многолетней работе с поставщиками и
+            <div class="col-lg-6 col-12 right text-lg-left text-center wow fadeInRight p-0" data-wow-delay=".3s"><p>Благодаря многолетней работе с поставщиками и
                     заказчиками, сотням реализованных заказов, а также множеству решенных спорных вопросов, наши
                     сотрудники обладают большим опытом и готовыми успешными решениями для самых сложных задач.</p>
 
@@ -118,13 +118,13 @@
     </div>
 </section>
 
-<section class="about-us-uid-8">
+<section class="about-us about-us-uid-8">
     <p class="wow fadeInUp" data-wow-delay=".3s">Наша компания находится в Китае и имеет склады в городах:<br/>
         Yiwu, Shenzhen, Suifenhe
     </p>
 </section>
 
-<section class="about-us-uid-9">
+<section class="about-us about-us-uid-9">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-12 left text-lg-left text-center wow fadeInLeft" data-wow-delay=".3s">Сотрудники <b>CHINAFORUS</b> свободно говорят на
@@ -138,7 +138,7 @@
     </div>
 </section>
 
-<section class="about-us-uid-10">
+<section class="about-us about-us-uid-10">
     <p class="wow fadeInUp" data-wow-delay=".3s">Поэтому мы лично позаботимся о том, чтобы ваш заказ был упакован, промаркирован и отправлен в соответствии с
         требованиями
     </p>
@@ -146,8 +146,45 @@
 
 
 <?= include 'partials/whoarewe.php' ?>
-<?= include 'partials/whyarewe.php' ?>
-<?= include 'partials/doubt.php' ?>
+<section class="doubt" id="doubt">
+    <div class="section-info wow fadeInUp" data-wow-delay=".3s">
+        <h2 class="section_title">Сомневаетесь?</h2>
+        <h3 class="section_desc">Вот ещё пару поводов выбрать нас:</h3>
+    </div>
+
+    <div class="container">
+        <div class="row items">
+            <div class="col-md-4 col-12 item wow zoomIn" data-wow-delay=".3s">
+                <div class="item-count" data-delay="400" data-min="0" data-max="10"></div>
+                <div class="item-desc">Мы работаем с Китаем уже более десяти лет</div>
+            </div>
+            <div class="col-md-4 col-12 item wow zoomIn" data-wow-delay=".3s">
+                <div class="item-count" data-delay="10" data-min="10238" data-max="10538"></div>
+                <div class="item-desc">Столько тонн товаров было доставлено на склады Амазон, а также в Россию, Украину,
+                    Казахстан для наших клиентов с помощью ChinaForUs
+                </div>
+            </div>
+            <div class="col-md-4 col-12 item wow zoomIn" data-wow-delay=".3s">
+                <div class="item-count" data-delay="20" data-min="700" data-max="862"></div>
+                <div class="item-desc">Мы с ответственностью, поддержкой и готовностью помочь в любых вопросах подходим
+                    к каждому клиенту, именно поэтому свой бизнес нам доверили уже более 800 заказчиков
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <?= include 'partials/reviews.php' ?>
 <?= include 'partials/callback.php' ?>
+<section class="contacts">
+    <div class="section-info wow fadeInUp" data-wow-delay=".3s">
+        <h2 class="section_title">Наши контакты</h2>
+    </div>
+    <div class="container wrap-info wow fadeInUp" data-wow-delay=".3s">
+        <div class="row d-flex justify-content-center text-center">
+            <div class="col-12">E-mail: <a href="mailto:chinaforuspost@gmail.com">chinaforuspost@gmail.com</a></div>
+            <div class="col-12">Телефон: <a href="tel:8613957945181">+86 139 5794 5181</a></div>
+            <div class="col-12">Соцсети: <a class="soc" href="https://instagram.com/chinaforus">Instagram</a> | <a class="soc" href="">Youtube</a></div>
+        </div>
+    </div>
+</section>
 <?= include 'partials/footer.php' ?>
