@@ -26,11 +26,26 @@
             {% block stylesheets %}
 
                 {% do assets.addCss('theme://css/bootstrap.min.css', 101) %}
-                {% do assets.addCss('theme://css/animate.css', 100) %}
-                {% do assets.addCss('theme://css/owl.carousel.min.css', 100) %}
-                {% do assets.addCss('theme://css/main.css', 100) %}
+                {% do assets.addCss('theme://css/animate.css', 101) %}
+                {% do assets.addCss('theme://css/owl.carousel.min.css', 101) %}
+                {% do assets.addCss('theme://css/main.css', 101) %}
 
-                {{ assets.css() }}
+            {% endblock %}
+
+            {% block javascripts %}
+
+                {% do assets.addJs('theme://js/jquery-3.4.1.min.js', {group: 'bottom'}) %}
+                {% do assets.addJs('theme://js/bootstrap.min.js', {group:'bottom'}) %}
+                {% do assets.addJs('theme://js/wow.min.js', {group:'bottom'}) %}
+                {% do assets.addJs('theme://js/owl.carousel.min.js', {group:'bottom'}) %}
+                {% do assets.addJs('theme://js/main.js', {group:'bottom'}) %}
+                {#  <script src="//code.jivosite.com/widget.js" data-jv-id="Qmn8krdLMR" async></script> #}
+
+            {% endblock %}
+
+            {% block assets deferred %}
+                {{ assets.css()|raw }}
+                {{ assets.js()|raw }}
             {% endblock %}
 
             <link rel="icon" type="image/png" href="{{ url('theme://img/favicon.png') }}"/>
@@ -48,16 +63,8 @@
             {% include 'partials/footer.html.twig' %}
         {% endblock %}
 
-        {% block javascripts %}
-
-            {% do assets.addJs('theme://js/jquery-3.4.1.min.js', 101) %}
-            {% do assets.addJs('theme://js/bootstrap.min.js', 101) %}
-            {% do assets.addJs('theme://js/wow.min.js', 101) %}
-            {% do assets.addJs('theme://js/owl.carousel.min.js', 101) %}
-            {% do assets.addJs('theme://js/main.js', 101) %}
-            {#  <script src="//code.jivosite.com/widget.js" data-jv-id="Qmn8krdLMR" async></script> #}
-
-            {{ assets.js() }}
+        {% block bottom %}
+            {{ assets.js('bottom')|raw }}
         {% endblock %}
     </body>
 </html>

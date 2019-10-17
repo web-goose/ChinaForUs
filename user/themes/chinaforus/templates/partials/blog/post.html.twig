@@ -1,0 +1,16 @@
+{% set image = page.media.images|first %}
+
+<div class="col-12 col-lg-5 post-detail ml-auto">
+    <p>
+        {% if page.taxonomy.category %}
+            Категория:
+            <a href="{{ base_url }}/ChinaForUs/blog/{{ 'category' }}{{ config.system.param_sep }}{{ page.taxonomy.category|first }}">{{ page.taxonomy.category|first }}</a>
+        {% endif %}
+        <span>&#9679;</span>
+        Дата публикации:
+        <strong>{{ page.date|date('M d, Y') }}</strong>
+    </p>
+    <img src="{{ image.url }}"/>
+    <p>{{ page.content }}</p>
+    {% include 'partials/taxonomylist.html.twig' with {base_url: base_url, taxonomy: 'tag'} %}
+</div>

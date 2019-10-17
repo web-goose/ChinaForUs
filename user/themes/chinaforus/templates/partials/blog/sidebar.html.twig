@@ -1,0 +1,46 @@
+{% set options = { items: {'@page.children': '/blog'}, 'limit': 5, 'order': {'by': 'date', 'dir': 'desc'}, 'pagination': true } %}
+{% set collection = page.collection(options) %}
+{% set taxlist = children_only is defined ? taxonomylist.getChildPagesTags() : taxonomylist.get() %}
+
+<div class="col-4 col-lg-2 sidebar mr-auto">
+
+    {% include "partials/searchbox.html.twig" %}
+
+    {% if taxlist %}
+        <div class="categories">
+            <h4>Категории</h4>
+            <ul>
+                {% for tax,value in taxlist["category"] %}
+                    <li>
+                        <a href="{{ base_url }}/blog/{{ 'category' }}{{ config.system.param_sep }}{{ tax }}">{{ tax }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+
+    {% if collection != null %}
+        <div class="recent-posts">
+            <h4>Последние посты</h4>
+            <ul>
+                {% for p in collection %}
+                    <li>
+                        {% set image = p.media.images|first %}
+                        {% if image %}
+                            <a href="{{ p.url }}">
+                                <img src="{{ image.url }}"/>
+                            </a>
+                        {% endif %}
+                        <div class="post-info">
+                            <a href="{{ p.url }}">
+                                <h5>{{ p.title|slice(0,20) }}</h5>
+                            </a>
+                            <p>{{ p.date|date('M d, Y') }}</p>
+                        </div>
+                    </li>
+                    <hr>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+</div>

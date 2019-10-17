@@ -1,0 +1,27 @@
+{% set image = page.media.images|first %}
+
+<div class="col-12 col-lg-6 post-summary">
+    <div class="post-inner">
+        {% if image %}
+            <a href="{{ page.url }}">
+                <figure>
+                    <img src="{{ image.url }}">
+                </figure>
+            </a>
+        {% endif %}
+        <a href="{{ page.url }}">
+            <h2>{{ page.title }}</h2>
+        </a>
+        {% if page.taxonomy.tag %}
+
+            {% include 'partials/taxonomylist.html.twig' with {base_url: base_url, taxonomy: 'tag'} %}
+
+        {% endif %}
+
+        {% if page.summary != page.content %}
+            <p>{{ page.summary|raw }}</p>
+        {% else %}
+            <p>{{ page.content|raw }}</p>
+        {% endif %}
+    </div>
+</div>

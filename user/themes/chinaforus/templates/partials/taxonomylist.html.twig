@@ -1,0 +1,11 @@
+{% set taxlist = page.taxonomy %} 
+
+{% if taxlist %}
+<p>Tags:
+    <span class="tags">
+        {% for tax,value in taxlist[taxonomy] %}
+        <a href="{{ base_url }}/blog/{{ taxonomy }}{{ config.system.param_sep }}{{ value }}">{{ value }}</a>
+        {% endfor %}
+    </span>
+</p>
+{% endif %}
