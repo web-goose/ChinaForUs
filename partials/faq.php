@@ -59,8 +59,8 @@
             </div>
         </div>
     </div>
-    <div class="section-info wow jackInTheBox">
+    <div class="section-info wow jackInTheBox pt-5">
         <h2 class="section_desc">Больше вопросов и ответов здесь:</h2>
-        <button class="faq-btn-more">FAQ</button>
+        <button class="faq-btn-more mt-5">FAQ</button>
     </div>
 </section>

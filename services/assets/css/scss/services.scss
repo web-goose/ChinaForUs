@@ -74,6 +74,11 @@
   }
 }
 
+.transaction-block{
+  background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), url("../../../img/transaction/bg.png") center fixed no-repeat;
+  background-size: contain;
+}
+
 @media screen and (max-width: 768px){
   .header-wrap{
     height: calc(100vh - 40px - 50%);
