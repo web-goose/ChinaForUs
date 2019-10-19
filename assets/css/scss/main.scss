@@ -214,11 +214,13 @@ header {
   }
 
   &:hover .services-item-desc {
-    animation: services-item-desc-anim .5s forwards;
+    display: block;
+    animation: services-item-anim .5s forwards;
   }
 
   &:hover .services-item-btn {
-    opacity: 1;
+    display: block;
+    animation: services-item-anim .5s forwards;
   }
 
 }
@@ -273,17 +275,17 @@ header {
   .services-item-desc {
     position: relative;
     font-size: 18px;
-    z-index: 5000;
+    z-index: 4999;
     padding: 0 10px;
     font-weight: 100;
-    opacity: 0;
+    display: none;
   }
 
   .services-item-btn {
     position: relative;
     z-index: 5000;
     transition: 1s;
-    opacity: 0;
+    display: none;
     padding-top: 20px;
 
     a {
@@ -303,7 +305,7 @@ header {
   }
 }
 
-@keyframes services-item-desc-anim {
+@keyframes services-item-anim {
   from {
     opacity: 0;
     -webkit-transform: translate3d(0, 50%, 0);
@@ -553,7 +555,7 @@ header {
 
 .callback {
   padding: 0 20px;
-  max-width: 100%;
+  max-width: 1350px;
   width: 100%;
 
   .form {

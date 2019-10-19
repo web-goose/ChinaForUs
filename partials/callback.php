@@ -7,7 +7,7 @@
 
     <div class="container-fluid">
         <div class="row d-flex justify-content-center">
-            <div class="col-xl-5 col-lg-7 col-12 pt-2 wow fadeInLeft">
+            <div class="col-xl-6 col-lg-7 col-12 pt-2 wow fadeInLeft">
                 <form class="form">
                     <label class="callback-textarea">
                         <textarea class="js-callback-textarea" required></textarea>
@@ -23,7 +23,7 @@
                     <button class="js-callback-btn" type="submit">Отправить</button>
                 </form>
             </div>
-            <div class="col-xl-3 col-lg-5 col-12 pt-2 wow fadeInRight">
+            <div class="col-xl-5 col-lg-5 col-12 pt-2 wow fadeInRight">
                 <div class="callback-title">
                     ВСЕ ВАШИ ПОТРЕБНОСТИ В ОДНОМ МЕСТЕ
                 </div>

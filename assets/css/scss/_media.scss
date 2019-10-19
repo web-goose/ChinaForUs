@@ -1,3 +1,13 @@
+@media all and (max-height: 567px) {
+  .header-wrap {
+    height: auto !important;
+  }
+  .header-wrap-arrow {
+    visibility: hidden;
+  }
+
+}
+
 @media all and (max-width: 768px) {
   body {
     font-size: 7px;
@@ -68,4 +78,11 @@
   .reviews{
     max-width: 1350px;
   }
+}
+
+@media  all and (min-width: 768px)  and (max-width: 1023px){
+  body{
+    font-size: 8px;
+  }
+  
 }

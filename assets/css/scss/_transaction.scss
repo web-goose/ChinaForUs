@@ -35,6 +35,10 @@ $timeline-color: $primary-color;
   img {
     max-width: 100%;
   }
+
+  .main-btn {
+    margin-top: 0;
+  }
 }
 
 .project-name {
@@ -53,7 +57,7 @@ $timeline-color: $primary-color;
   &:before {
     content: "";
     width: 2px;
-    height: 100%;
+    height: 92.8%;
     background: #000;
     left: 50%;
     top: 0;
@@ -158,7 +162,7 @@ $timeline-color: $primary-color;
       }
 
       .timeline-icon {
-        left: 0;
+        left: -6px;
       }
     }
   }

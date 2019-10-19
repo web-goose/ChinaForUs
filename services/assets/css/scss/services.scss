@@ -81,6 +81,20 @@
 
 @media screen and (max-width: 768px){
   .header-wrap{
-    height: calc(100vh - 40px - 50%);
+    height: calc(100vh - 40px - 50%)
   }
+}
+
+.header-wrap{
+  height: calc(100vh - 40px - 40%) !important;
+}
+
+@media all and (max-height: 567px) {
+  .header-wrap {
+    height: auto !important;
+  }
+  .header-wrap-arrow {
+    visibility: hidden;
+  }
+
 }

@@ -42,7 +42,7 @@ function getHeader($title, $wrapTitle, $wrapDesc, $bgUrl)
         </div>
     </nav>
 
-    <div class="header-wrap" style="height: calc(100vh - 80px - 50%)">
+    <div class="header-wrap">
         <div class="header-wrap-info">
             <h1 class="header-wrap-title wow fadeInUp" data-wow-delay="1s">$wrapTitle</h1>
             <div class="header-wrap-desc wow fadeInUp" data-wow-delay="1.5s">$wrapDesc</div>
