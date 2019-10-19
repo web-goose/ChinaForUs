@@ -67,7 +67,7 @@ getHeader('Логистика', 'Логистика', 'Экспресс, ави�
                 </div>
             </div>
 
-            <div class="col-12 text-center wow fadeIn" data-wow-delay=".3s">
+            <div class="btn-block col-12 text-center wow fadeIn" data-wow-delay=".3s">
                 <button class="main-btn">Заполнить заявку на услугу</button>
             </div>
 

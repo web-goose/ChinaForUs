@@ -10,6 +10,7 @@ include 'partials/reviews.php';
 include 'partials/faq.php';
 include 'partials/callback.php';
 include 'partials/blog.php';
+include 'partials/contacts.php';
 include 'partials/footer.php';
 
 

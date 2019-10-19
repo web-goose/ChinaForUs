@@ -6,6 +6,35 @@
     visibility: hidden;
   }
 
+  .contacts {
+    .wrap-info {
+      font-size: 14px;
+    }
+  }
+  .transaction {
+    .section_title{
+      font-size: 20px;
+    }
+    #timeline{
+      margin-left: 20px;
+
+    }
+    .timeline-item {
+      .timeline-content {
+        h2 {
+          font-size: 1.8em;
+        }
+
+        p {
+          font-size: 1.2em;
+        }
+      }
+    }
+    .main-btn{
+      padding: 5px 10px;
+    }
+  }
+
 }
 
 @media all and (max-width: 768px) {
@@ -75,14 +104,14 @@
 }
 
 @media all and (min-width: 1500px) {
-  .reviews{
+  .reviews {
     max-width: 1350px;
   }
 }
 
-@media  all and (min-width: 768px)  and (max-width: 1023px){
-  body{
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  body {
     font-size: 8px;
   }
-  
+
 }

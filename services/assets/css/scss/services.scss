@@ -41,7 +41,7 @@
 .overview-block1 {
   //background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/overview/2.jpg") no-repeat;
   //background-size: cover;
-  padding: 100px 0;
+  padding: 0;
   color: #000;
   font-size: 3em;
   font-weight: 300;
@@ -79,6 +79,12 @@
   background-size: contain;
 }
 
+.logistika{
+  .btn-block{
+    margin-top: 70px;
+  }
+}
+
 @media screen and (max-width: 768px){
   .header-wrap{
     height: calc(100vh - 40px - 50%)
@@ -86,7 +92,7 @@
 }
 
 .header-wrap{
-  height: calc(100vh - 40px - 40%) !important;
+  height: calc(100vh - 80px - 50%) !important;
 }
 
 @media all and (max-height: 567px) {
