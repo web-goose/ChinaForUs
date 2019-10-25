@@ -3,11 +3,11 @@ composer.lock
 source/
 tmp/
 .github/
-assets/
-backup/
+cache/
 logs/
 images/
-cache/
+backup/
+assets/
 user/accounts
 user/data
 user/themes/quark

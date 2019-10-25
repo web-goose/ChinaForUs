@@ -1,5 +1,3 @@
-$('.header-wrap').height(innerHeight - 80);
-
 const wow = new WOW(
     {
         boxClass: 'wow',      // animated element css class (default is wow)
@@ -35,7 +33,8 @@ function scrollToAnchor(anchorName) {
     $('html, body').stop().animate({scrollTop: $(anchorName).offset().top}, 1000);
 }
 
-const text = "время и деньги";
+const text = $('.typewriter').text();
+$('.typewriter').text('');
 let writerCount = 0;
 let typeWriterInterval;
 let typeCleanerInterval;
@@ -73,11 +72,6 @@ function typeCleaner() {
 (function () {
     typeWriter();
 }());
-
-// $(window).scroll(function () {
-//    if($(window).offset().top == $('.item-count').offset().top)
-//        console.log(123);
-// });
 
 function calcCount() {
     for (let i = 0; i < $('.item-count').length; i++) {
