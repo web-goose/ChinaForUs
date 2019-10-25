@@ -3,7 +3,7 @@ $textBlack: #000000;
 $orangeColor: #f5914f;
 $h2: 3.8em;
 $h3: 2.4em;
-$sectionMargin: 80px auto;
+$sectionMargin: 40px auto;
 
 %textSemiBold {
   font-weight: 600;
@@ -30,7 +30,7 @@ section {
 .section-info {
   max-width: 600px;
   margin: 0 auto;
-  padding: 0 10px 80px 10px;
+  padding: 0 10px 30px 10px;
   color: $textBlack;
 
   .section_title, .section_desc {
@@ -155,6 +155,7 @@ section {
     position: relative;
     font-size: 22px;
     z-index: 5000;
+    font-weight: bold;
   }
 
   .box-item-desc {
@@ -204,6 +205,13 @@ section {
   }
 }
 
+.block-hr{
+  max-width: 970px;
+  width: 100%;
+  height: 2px;
+  background: #E8E8E8;
+  margin: 0 auto;
+}
 
 ///////////////////
 
@@ -259,17 +267,22 @@ header {
       max-width: 1200px;
       .header-wrap-title {
         color: $textWhite;
-        font-size: 8.4em;
+        font-size: 7em;
         @extend %textSemiBold;
         visibility: hidden;
+        .yellow-bg{
+          color: #000;
+          padding: 0 20px;
+          background: $orangeColor;
+        }
       }
 
       .header-wrap-desc {
         color: $textWhite;
-        font-size: 2.6em;
+        font-size: 3.8em;
         margin: 40px auto;
         visibility: hidden;
-        font-weight: 100;
+        @extend %textSemiBold;
         max-width: 940px;
       }
 
@@ -320,6 +333,42 @@ header {
   }
   100% {
     bottom: 50px;
+  }
+}
+
+.form-block{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  .form{
+    border: 3px solid $orangeColor;
+    border-radius: 5px;
+    padding: 25px;
+    margin: 15px 5px;
+    background: #fff;
+    .title{
+      font-size: 3em;
+    }
+    input{
+      font-size: 2em;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #D9E2E4;
+      color: #ABACAE;
+      text-align: center;
+    }
+    .js-form-btn-send{
+      font-size: 2em;
+      background: $orangeColor;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-weight: bold;
+      color: #fff;
+      border: none;
+      letter-spacing: 1px;
+      margin-top: 10px;
+    }
   }
 }
 

@@ -40,12 +40,10 @@
 
     <div class="header-wrap">
         <div class="header-wrap-info">
-            <h1 class="header-wrap-title wow fadeInUp" data-wow-delay="1s">Ваш партнер в Китае</h1>
-            <div class="header-wrap-desc wow fadeInUp" data-wow-delay="1.5s">Компания ChinaForUs — надежный партнер,
-                который уже более 10 лет помогает вам
-                в
-                поиске, ведении сделок, инспекции, испытании,
-                хранении, консолидации, доставке товаров из Китая
+            <h1 class="header-wrap-title wow fadeInUp" data-wow-delay="1s">Бизнес с Китаем <span class="yellow-bg">под ключ</span></h1>
+            <div class="header-wrap-desc wow fadeInUp" data-wow-delay="1.5s">
+                <p>Поиск поставщика > сопровождение сделки</p>
+                <p>Брендирование > логистика</p>
             </div>
             <div class="header-wrap-btn wow fadeInUp" data-wow-delay="2s">
                 <button>Что мы делаем</button>
@@ -58,4 +56,5 @@
             </svg>
         </div>
     </div>
+    <span id="special"></span>
 </header>
