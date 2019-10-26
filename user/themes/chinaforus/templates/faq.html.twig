@@ -1,0 +1,12 @@
+{% extends "partials/base.html.twig" %}
+
+{% if page.header.isNotIndex %}
+    {% block stylesheets %}
+        {{ parent() }}
+        {% do assets.addCss('theme://css/other-page.css', 101) %}
+    {% endblock %}
+{% endif %}
+
+{% block content %}
+    {% include 'partials/faq.html.twig' %}
+{% endblock %}
