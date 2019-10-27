@@ -5,11 +5,12 @@
                 <div id="faq-list" class="wow jackInTheBox">
                     {% for item in page.header.faqList %}
                         {% set index = loop.index %}
-                        {% set show = if (index == 1) ? 'show' : '' %}
+                        {% set show = (loop.first) ? 'show' : '' %}
+                        {% set collapsed = ( not loop.first ) ? 'collapsed' : '' %}
                         <div class="card">
-                            <div class="card-header" id="heading-{{ index }}">
+                            <div class="card-header" id="heading-{{ index }}" style="{{ (loop.first) ? 'background: rgb(245, 145, 79);': '' }}">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-link faq-btn" data-toggle="collapse" data-target="#collapse-{{ index }}" aria-expanded="true" aria-controls="card-{{ index }}">
+                                    <button class="btn btn-link faq-btn {{ collapsed }}" data-toggle="collapse" data-target="#collapse-{{ index }}" aria-expanded="true" aria-controls="card-{{ index }}" style="{{ (loop.first) ? 'color: rgb(255, 255, 255);' : '' }}">
                                         {{ item.question }}
                                     </button>
                                 </h5>

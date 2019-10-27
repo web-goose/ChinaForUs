@@ -1,0 +1,17 @@
+{% extends "partials/base.html.twig" %}
+
+{% set pageTemplate = 'partials/services/' ~ page.header.pageTemplate ~ '.html.twig' %}
+
+{% if page.header.isNotIndex %}
+    {% block stylesheets %}
+        {{ parent() }}
+        {% do assets.addCss('theme://css/services.css', 101) %}
+    {% endblock %}
+{% endif %}
+
+{% block content %}
+    {% include pageTemplate %}
+    {% include 'modular/services.html.twig' %}
+    {% include 'modular/whyarewe.html.twig' %}
+    {% include 'modular/contacts.html.twig' %}
+{% endblock %}

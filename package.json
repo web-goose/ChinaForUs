@@ -2,6 +2,7 @@
     "scripts": {
         "scss-main": "node-sass -w user/themes/chinaforus/scss/main.scss user/themes/chinaforus/css/styles.css",
         "scss-other": "node-sass -w user/themes/chinaforus/scss/other-page.scss user/themes/chinaforus/css/other-page.css",
+        "scss-services": "node-sass -w user/themes/chinaforus/scss/services.scss user/themes/chinaforus/css/services.css",
         "scss-blog": "node-sass -w user/themes/chinaforus/scss/blog/main.scss user/themes/chinaforus/css/blog/styles.css"
     },
     "dependencies": {
