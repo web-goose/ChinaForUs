@@ -6,7 +6,7 @@
     </div>
     <div class="container-fluid">
         <div class="row items">
-            {% for item in reviewsPage.header.reviews %}
+            {% for item in reviewsPage.header.reviews|slice(0,3) %}
                 <div class="col-lg-4 col-md-8 col-12 item text-md-left text-center wow fadeIn" data-delay=".3s">
                     <div class="row">
                         {% if item.img %}

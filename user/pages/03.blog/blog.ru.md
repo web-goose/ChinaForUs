@@ -1,7 +1,7 @@
 ---
 title: 'Наш блог'
 child_type: post
-isIndex: false
+isBlog: true
 content:
     items:
         - '@self.children'

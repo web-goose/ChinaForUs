@@ -1,15 +1,15 @@
-@media screen and (max-width: 768px) {
-  .header-wrap {
-    height: calc(100vh - 40px - 40%);
+.header-wrap {
+  height: calc(100vh - 80px - 60vh) !important;
+  .header-wrap-title {
+    font-size: 5.5em !important;
+    font-weight: 700 !important;
+  }
+
+  .header-wrap-desc {
+    font-size: 2.5em !important;
+    font-weight: 300 !important;
   }
 }
-
-header.other-page-header {
-  .header-wrap {
-    height: calc(100vh - 80px - 40%);
-  }
-}
-
 .about-us{
   margin: 60px 0;
 }
@@ -79,4 +79,10 @@ header.other-page-header {
 .doubt{
   background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../img/all/bg.jpeg") center no-repeat fixed;
   background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .header-wrap {
+    height: calc(100vh - 40px - 70vh) !important;
+  }
 }

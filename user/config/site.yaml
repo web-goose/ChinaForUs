@@ -2,7 +2,7 @@ title: CHINAFORUS
 default_lang: ru
 author:
   name: 'https://webgoose.ru'
-  email: john@example.com
+  email: support@webgoose.ru
 taxonomies:
   - category
   - tag
@@ -20,27 +20,22 @@ team:
   -
     name: Алена
     role: 'Customers Suppport'
-    img:
-      user/themes/chinaforus/img/personal/1.jpg:
-        name: 1.jpg
-        type: image/jpeg
-        size: 11958
-        path: user/themes/chinaforus/img/personal/1.jpg
   -
     name: Владимир
     role: 'Founder & Art Director'
-    img:
-      user/themes/chinaforus/img/personal/1.jpg:
-        name: 1.jpg
-        type: image/jpeg
-        size: 11958
-        path: user/themes/chinaforus/img/personal/1.jpg
   -
     name: Дмитрий
     role: 'Design Director'
-    img:
-      user/themes/chinaforus/img/personal/1.jpg:
-        name: 1.jpg
-        type: image/jpeg
-        size: 11958
-        path: user/themes/chinaforus/img/personal/1.jpg
+0:
+  email: ''
+1:
+  youtube: fdfdffgdg
+2:
+  instagram: ''
+youtube: 'url pls'
+email: chinaforuspost@gmail.com
+instagram: 'https://instagram.com/chinaforus'
+contacts:
+  phone: '86 139 5794 5181'
+  email: chinaforuspost@gmail.com
+  instagram: 'https://instagram.com/chinaforus'

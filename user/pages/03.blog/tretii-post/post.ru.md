@@ -7,6 +7,7 @@ taxonomy:
     tag:
         - test
         - 'tag 2'
+isBlog: true
 ---
 
 Lorem Ipsum Dollor Sit Amet Oblique persius singulis vix ne. Nam ei enim graecis, et veniam copiosae ius. Cibo facilisi in vix, omnium animal incorrupte eam ex, te sed nostro doctus. Cu ferri disputando duo, quas ullum interesset no sit. Ex placerat incorrupte delicatissimi usu. Eam at rebum euripidis. Mel ea probo mutat latine, id tantas fabellas oportere usu, in ius natum detraxit. Has aperiam nostrum ex, vim an libris cetero, populo omnesque tractatos vel ne. Cu vidit accusata erroribus qui. Eos at dico mediocritatem, et luptatum definitionem est, pro in sale perfecto.

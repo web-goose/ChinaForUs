@@ -30,15 +30,13 @@ form:
               type: spacer
               title: Параметры
 
-
-            header.isIndex:
+            header.isBlog:
               type: toggle
-              label: Это главная страница?
+              label: Это блог?
               highlight: 1
-              default: 0
+              default: 1
               options:
                 1: Да
-                0: Нет
               validate:
                 type: bool
 

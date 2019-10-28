@@ -1,11 +1,12 @@
 {% extends "partials/base.html.twig" %}
 
-{% if page.header.isNotIndex %}
-    {% block stylesheets %}
-        {{ parent() }}
-        {% do assets.addCss('theme://css/other-page.css', 101) %}
-    {% endblock %}
-{% endif %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% if not page.header.isIndex %}
+        {% do assets.addCss('theme://css/other-page.css') %}
+    {% endif %}
+{% endblock %}
 
 {% block content %}
     {% for module in page.collection() %}

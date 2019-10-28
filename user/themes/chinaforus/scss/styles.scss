@@ -226,10 +226,14 @@ header {
     height: 80px;
     padding: 5px 40px;
 
-    .header-logo {
+    .navbar-brand {
       height: 100%;
-      margin: 0;
-      padding: 0;
+
+      .header-logo {
+        height: inherit;
+        margin: 0;
+        padding: 0;
+      }
     }
 
     .header-nav-item {

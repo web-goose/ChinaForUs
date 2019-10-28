@@ -1,6 +1,12 @@
 name: ChinaForUs
 version: 1.0.0
-icon: empire
+description: Специальная тема для проекта
+icon: heart
 author:
   name: WebGoose
+  email: support@webgoose.ru
+  url: https://webgoose.ru/
 license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }

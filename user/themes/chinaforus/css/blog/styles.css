@@ -121,7 +121,8 @@ h4 {
 h5 {
   font-size: 1.3em; }
 
-img {
+.blog img,
+.post img {
   width: 100%; }
 
 hr {

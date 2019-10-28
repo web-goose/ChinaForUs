@@ -3,15 +3,46 @@
 
 form:
     fields:
-        rsection:
+        firstsection:
+            type: section
+            title: Информация для связи
+            underline: true
+
+            fields:
+              socialfieldset:
+                type: fieldset
+                title: Контакты
+                text: Добавьте эл.почту и ссылки на соц.сети
+                icon: link
+                collapsed: true  
+                collapsible: true
+                fields:   
+                  contacts.phone:
+                    type: text
+                    help: Текстовое поле
+                    label: Номер телефона
+                  contacts.email:
+                    type: text
+                    help: Текстовое поле
+                    label: Эл. Почта
+                  contacts.youtube:
+                    type: text
+                    help: Текстовое поле
+                    label: Youtube
+                  contacts.instagram:
+                    type: text
+                    help: Текстовое поле
+                    label: Instagram
+
+        secondsection:
             type: section
             title: Прочее
             underline: true
 
             fields:
-              header.fieldset:
+              fieldset:
                 type: fieldset
-                title: Команда проекта (Блок WhoAreWe)
+                title: Команда проекта (WhoAreWe)
                 text: Используйте для добавления человека в карусель
                 icon: comments
                 collapsed: true  
