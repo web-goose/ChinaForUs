@@ -1,7 +1,7 @@
 ---
 title: 'Сопровождение сделки'
 media_order: bg.jpg
-isNotIndex: true
+isIndex: false
 pageTemplate: transaction
 ---
 

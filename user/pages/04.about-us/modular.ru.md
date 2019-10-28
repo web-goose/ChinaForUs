@@ -1,6 +1,6 @@
 ---
 title: 'О нас'
-isNotIndex: true
+isIndex: false
 content:
     items: '@self.modular'
     order:

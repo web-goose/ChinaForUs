@@ -5,7 +5,7 @@
 {% if page.header.isNotIndex %}
     {% block stylesheets %}
         {{ parent() }}
-        {% do assets.addCss('theme://css/services.css', 101) %}
+        {% do assets.addCss('theme://css/services.css') %}
     {% endblock %}
 {% endif %}
 

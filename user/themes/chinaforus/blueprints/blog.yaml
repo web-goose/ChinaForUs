@@ -30,6 +30,18 @@ form:
               type: spacer
               title: Параметры
 
+
+            header.isIndex:
+              type: toggle
+              label: Это главная страница?
+              highlight: 1
+              default: 0
+              options:
+                1: Да
+                0: Нет
+              validate:
+                type: bool
+
             header.content.items:
               type: textarea
               yaml: true

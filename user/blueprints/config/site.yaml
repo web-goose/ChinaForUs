@@ -1,0 +1,41 @@
+@extends:
+    '@parent'
+
+form:
+    fields:
+        rsection:
+            type: section
+            title: Прочее
+            underline: true
+
+            fields:
+              header.fieldset:
+                type: fieldset
+                title: Команда проекта (Блок WhoAreWe)
+                text: Используйте для добавления человека в карусель
+                icon: comments
+                collapsed: true  
+                collapsible: true
+                fields:   
+                  team:
+                      name: team
+                      type: list
+                      style: vertical
+                      fields:
+                        .name:
+                          type: text
+                          help: Текстовое поле
+                          label: Имя
+                        .role:
+                          type: text
+                          help: Текстовое поле
+                          label: Роль
+                        .img:
+                          type: file
+                          label: Изображение
+                          help: Избражение любого формата
+                          destination: 'theme@:/img/personal'
+                          multiple: false
+                          filesize: 1
+                          accept:
+                            - image/*

@@ -1,7 +1,7 @@
 ---
 title: 'Услуги склада'
 media_order: bg.jpg
-isNotIndex: true
+isIndex: false
 pageTemplate: uslugi-sklada
 ---
 

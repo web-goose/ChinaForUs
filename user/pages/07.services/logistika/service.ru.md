@@ -1,7 +1,7 @@
 ---
 title: Логистика
 media_order: bg.jpg
-isNotIndex: true
+isIndex: false
 pageTemplate: logistika
 ---
 

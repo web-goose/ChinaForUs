@@ -1,6 +1,6 @@
 ---
 title: Услуги
 redirect: services/search
-isNotIndex: true
+isIndex: false
 ---
 

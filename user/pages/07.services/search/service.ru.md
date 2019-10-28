@@ -1,7 +1,7 @@
 ---
 title: Поиск
 media_order: bg.jpg
-isNotIndex: true
+isIndex: false
 pageTemplate: search
 ---
 

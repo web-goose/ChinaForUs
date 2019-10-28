@@ -1,6 +1,6 @@
 ---
 title: Главная
-isNotIndex: false
+isIndex: true
 content:
     items: '@self.modular'
     order:
@@ -9,23 +9,23 @@ content:
         custom:
             - _form
             - _services
-            - _form
+            - _form1
             - _transaction
-            - _form
+            - _form2
             - _activity
-            - _form
+            - _form3
             - _whoarewe
-            - _form
+            - _form4
             - _whyarewe
-            - _form
+            - _form5
             - _doubt
-            - _form
+            - _form6
             - _reviews
-            - _form
+            - _form7
             - _faq
             - _callback
             - _blog
-            - _form
+            - _form8
             - _contacts
 ---
 

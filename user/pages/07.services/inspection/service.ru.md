@@ -1,7 +1,7 @@
 ---
 title: Инспекция
 media_order: bg.jpg
-isNotIndex: true
+isIndex: false
 pageTemplate: inspection
 ---
 

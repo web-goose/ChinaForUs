@@ -5,29 +5,15 @@
                         вашего бизнеса</h3>
     </div>
     <div class="owl-carousel owl-theme wow flipInX">
-        <div class="item">
-            <div class="item-img"><img src="{{ url('theme://img/personal/1.jpg') }}" alt=""></div>
-            <div class="item-name">Владимир</div>
-            <div class="item-hr">
-                <span></span>
+        {% for item in site.team %}
+            <div class="item">
+                <div class="item-img"><img src="{{ url('theme://img/personal/' ~ item.img|first.name) }}" alt=""></div>
+                <div class="item-name">{{ item.name }}</div>
+                <div class="item-hr">
+                    <span></span>
+                </div>
+                <div class="item-position">{{ item.role }}</div>
             </div>
-            <div class="item-position">Founder & Art Director</div>
-        </div>
-        <div class="item">
-            <div class="item-img"><img src="{{ url('theme://img/personal/1.jpg') }}" alt=""></div>
-            <div class="item-name">Алена</div>
-            <div class="item-hr">
-                <span></span>
-            </div>
-            <div class="item-position">Customers Support</div>
-        </div>
-        <div class="item">
-            <div class="item-img"><img src="{{ url('theme://img/personal/1.jpg') }}" alt=""></div>
-            <div class="item-name">Дмитрий</div>
-            <div class="item-hr">
-                <span></span>
-            </div>
-            <div class="item-position">Design Director</div>
-        </div>
+        {% endfor %}
     </div>
 </section>

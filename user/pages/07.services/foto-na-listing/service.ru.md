@@ -1,7 +1,7 @@
 ---
 title: 'Фото на листинг'
 media_order: bg.jpg
-isNotIndex: true
+isIndex: false
 pageTemplate: foto-na-listing
 ---
 

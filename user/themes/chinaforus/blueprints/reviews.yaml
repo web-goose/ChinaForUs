@@ -30,11 +30,11 @@ form:
               type: spacer
               title: Параметры
 
-            header.isNotIndex:
+            header.isIndex:
               type: toggle
-              label: Это не главная страница?
+              label: Это главная страница?
               highlight: 1
-              default: 1
+              default: 0
               options:
                 1: Да
                 0: Нет
@@ -44,6 +44,7 @@ form:
             header.reviews:
               name: list
               type: list
+              collapsed: true
               style: vertical
               label: Отзывы
               fields:
@@ -56,7 +57,7 @@ form:
                 .img:
                   type: file
                   label: Изображение
-                  destination: '@self'
+                  destination: 'theme@:/img/reviews'
                   multiple: false
                   filesize: 1
                   accept:
