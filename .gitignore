@@ -1,9 +1,9 @@
 node_modules
 composer.lock
 source/
+/cache/
 tmp/
 .github/
-cache/
 logs/
 user/accounts
 user/themes/quark
