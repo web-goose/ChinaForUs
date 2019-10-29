@@ -5,10 +5,6 @@ tmp/
 .github/
 cache/
 logs/
-images/
-backup/
-assets/
 user/accounts
-user/data
 user/themes/quark
 bash.sh
