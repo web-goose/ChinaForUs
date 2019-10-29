@@ -54,14 +54,15 @@
 
 .tags a {
   margin: 0 .3rem;
-  color: #fff;
-  background-color: #f5914f;
+  color: #f5914f;
+  background-color: #fff;
+  border: 0.08rem solid #f5914f;
+  border-radius: 1rem;
   padding: 0 .5rem;
-  border-radius: .1rem;
   font-size: .8em; }
   .tags a:hover {
     color: #fff;
-    background-color: #e28547; }
+    background-color: #f5914f; }
 
 .categories {
   margin-bottom: 2rem; }

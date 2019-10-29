@@ -21,10 +21,14 @@
     {% endif %}
     <div class="row">
         {% for p in collection %}
-            {% include 'partials/blog/post-summary.html.twig' with { 'page': p } %}
+            {% if (p.header.unpublished is not defined or (p.header.unpublished == false)) %}
+                {% include 'partials/blog/post-summary.html.twig' with { 'page': p } %}
+            {% endif %}
         {% endfor %}
         {% for page in search_results %}
-            {% include 'partials/blog/post-summary.html.twig' with {'page': page} %}
+            {% if (p.header.unpublished is not defined or (p.header.unpublished == false)) %}
+                {% include 'partials/blog/post-summary.html.twig' with {'page': page} %}
+            {% endif %}
         {% endfor %}
     </div>
     <div class="pagination-wrapper">

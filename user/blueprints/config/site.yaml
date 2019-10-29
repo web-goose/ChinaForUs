@@ -1,72 +1,37 @@
-@extends:
-    '@parent'
+extends@: "@parent"
 
 form:
-    fields:
-        firstsection:
-            type: section
-            title: Информация для связи
-            underline: true
+  fields:
+    firstsection:
+      type: section
+      title: Информация для связи
+      underline: true
 
-            fields:
-              socialfieldset:
-                type: fieldset
-                title: Контакты
-                text: Добавьте эл.почту и ссылки на соц.сети
-                icon: link
-                collapsed: true  
-                collapsible: true
-                fields:   
-                  contacts.phone:
-                    type: text
-                    help: Текстовое поле
-                    label: Номер телефона
-                  contacts.email:
-                    type: text
-                    help: Текстовое поле
-                    label: Эл. Почта
-                  contacts.youtube:
-                    type: text
-                    help: Текстовое поле
-                    label: Youtube
-                  contacts.instagram:
-                    type: text
-                    help: Текстовое поле
-                    label: Instagram
-
-        secondsection:
-            type: section
-            title: Прочее
-            underline: true
-
-            fields:
-              fieldset:
-                type: fieldset
-                title: Команда проекта (WhoAreWe)
-                text: Используйте для добавления человека в карусель
-                icon: comments
-                collapsed: true  
-                collapsible: true
-                fields:   
-                  team:
-                      name: team
-                      type: list
-                      style: vertical
-                      fields:
-                        .name:
-                          type: text
-                          help: Текстовое поле
-                          label: Имя
-                        .role:
-                          type: text
-                          help: Текстовое поле
-                          label: Роль
-                        .img:
-                          type: file
-                          label: Изображение
-                          help: Избражение любого формата
-                          destination: 'theme@:/img/personal'
-                          multiple: false
-                          filesize: 1
-                          accept:
-                            - image/*
+      fields:
+        contancts.fieldset:
+          type: fieldset
+          title: Контакты
+          text: Добавьте эл.почту и ссылки на соц.сети
+          icon: link
+          collapsed: true
+          collapsible: true
+          fields:
+            contacts.phone:
+              type: text
+              help: Текстовое поле
+              label: Номер телефона
+              default: 86 139 5794 5181
+            contacts.email:
+              type: text
+              help: Текстовое поле
+              label: Эл. Почта
+              default: chinaforuspost@gmail.com
+            contacts.youtube:
+              type: text
+              help: Текстовое поле
+              label: YouTube
+            contacts.instagram:
+              type: text
+              help: Текстовое поле
+              label: Instagram
+              default: https://instagram.com/chinaforus

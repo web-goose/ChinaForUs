@@ -1,6 +1,5 @@
 ---
 title: 'Результаты поиска'
-routable: false
-visible: false
+isBlog: true
 ---
 

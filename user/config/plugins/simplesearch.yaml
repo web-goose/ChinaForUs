@@ -3,9 +3,9 @@ built_in_css: true
 built_in_js: true
 display_button: false
 min_query_length: 3
-route: /search
+route: search
 search_content: raw
-template: blog
+template: search-result
 filter_combinator: and
 ignore_accented_characters: false
 order:

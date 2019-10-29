@@ -1,11 +1,12 @@
+{% set routerPage = page.find('/whoarewe') %}
+
 <section class="whoAreWe" id="whoAreWe">
     <div class="section-info wow fadeInUp" data-wow-delay=".3s">
-        <h2 class="section_title">Будем знакомы</h2>
-        <h3 class="section_desc">Мы ежедневно прикладываем все усилия, чтобы обеспечить наилучший сервис для вас и
-                        вашего бизнеса</h3>
+        <h2 class="section_title">{{ routerPage.header.whoarewe.title }}</h2>
+        <h3 class="section_desc">{{ routerPage.header.whoarewe.content }}</h3>
     </div>
     <div class="owl-carousel owl-theme wow flipInX">
-        {% for item in site.team %}
+        {% for item in routerPage.header.whoarewe.team %}
             <div class="item">
                 <div class="item-img"><img src="{{ url('theme://img/personal/' ~ item.img|first.name) }}" alt=""></div>
                 <div class="item-name">{{ item.name }}</div>

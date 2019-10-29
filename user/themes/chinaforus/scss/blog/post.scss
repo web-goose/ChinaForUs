@@ -75,14 +75,15 @@
 .tags {
     a {
         margin: 0 .3rem;
-        color: #fff;
-        background-color: $baseColor;
+        color: $baseColor;
+        background-color: #fff;
+        border: .08rem solid $baseColor;
+        border-radius: 1rem;
         padding: 0 .5rem;
-        border-radius: .1rem;
         font-size: .8em;
         &:hover {
             color: #fff;
-            background-color: #e28547;
+            background-color: $baseColor;
         }
     }
 }

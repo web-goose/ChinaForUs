@@ -1,14 +1,14 @@
-title: CHINAFORUS
+title: ChinaForUs
 default_lang: ru
 author:
-  name: 'https://webgoose.ru'
+  name: webgoose.ru
   email: support@webgoose.ru
 taxonomies:
   - category
   - tag
 metadata:
-  description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
-  keywords: wewe
+  description: example
+  keywords: example
 summary:
   enabled: true
   format: short
@@ -16,25 +16,6 @@ summary:
   delimiter: '==='
 blog:
   route: /blog
-team:
-  -
-    name: Алена
-    role: 'Customers Suppport'
-  -
-    name: Владимир
-    role: 'Founder & Art Director'
-  -
-    name: Дмитрий
-    role: 'Design Director'
-0:
-  email: ''
-1:
-  youtube: fdfdffgdg
-2:
-  instagram: ''
-youtube: 'url pls'
-email: chinaforuspost@gmail.com
-instagram: 'https://instagram.com/chinaforus'
 contacts:
   phone: '86 139 5794 5181'
   email: chinaforuspost@gmail.com

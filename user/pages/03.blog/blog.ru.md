@@ -5,7 +5,7 @@ isBlog: true
 content:
     items:
         - '@self.children'
-    limit: 2
+    limit: 5
     order:
         by: date
         dir: desc

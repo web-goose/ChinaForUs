@@ -1,6 +1,7 @@
 ---
 title: 'Первый пост'
 media_order: moon_tree_starry_sky_132139_1920x1080.jpg
+published: true
 taxonomy:
     category:
         - 'category 2'
