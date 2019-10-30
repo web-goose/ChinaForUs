@@ -25,9 +25,9 @@
                 {% include 'partials/blog/post-summary.html.twig' with { 'page': p } %}
             {% endif %}
         {% endfor %}
-        {% for page in search_results %}
+        {% for p in search_results %}
             {% if (p.header.unpublished is not defined or (p.header.unpublished == false)) %}
-                {% include 'partials/blog/post-summary.html.twig' with {'page': page} %}
+                {% include 'partials/blog/post-summary.html.twig' with {'page': p} %}
             {% endif %}
         {% endfor %}
     </div>

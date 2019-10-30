@@ -2,7 +2,7 @@ enabled: true
 route: /admin
 cache_enabled: false
 theme: grav
-logo_text: 'China For Us'
+logo_text: ChinaForUs
 content_padding: true
 twofa_enabled: true
 log_viewer_files:
@@ -29,7 +29,7 @@ warnings:
   delete_page: true
 edit_mode: normal
 frontend_preview_target: inline
-show_github_msg: false
+show_github_msg: true
 pages_list_display_field: title
 google_fonts: false
 admin_icons: line-awesome

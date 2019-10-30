@@ -1,0 +1,53 @@
+<?php
+return [
+    '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
+    'filename' => '/var/www/sites/ChinaForUs/user/blueprints/config/site.yaml',
+    'modified' => 1572366336,
+    'data' => [
+        'extends@' => '@parent',
+        'form' => [
+            'fields' => [
+                'firstsection' => [
+                    'type' => 'section',
+                    'title' => 'Информация для связи',
+                    'underline' => true,
+                    'fields' => [
+                        'contancts.fieldset' => [
+                            'type' => 'fieldset',
+                            'title' => 'Контакты',
+                            'text' => 'Добавьте эл.почту и ссылки на соц.сети',
+                            'icon' => 'link',
+                            'collapsed' => true,
+                            'collapsible' => true,
+                            'fields' => [
+                                'contacts.phone' => [
+                                    'type' => 'text',
+                                    'help' => 'Текстовое поле',
+                                    'label' => 'Номер телефона',
+                                    'default' => '86 139 5794 5181'
+                                ],
+                                'contacts.email' => [
+                                    'type' => 'text',
+                                    'help' => 'Текстовое поле',
+                                    'label' => 'Эл. Почта',
+                                    'default' => 'chinaforuspost@gmail.com'
+                                ],
+                                'contacts.youtube' => [
+                                    'type' => 'text',
+                                    'help' => 'Текстовое поле',
+                                    'label' => 'YouTube'
+                                ],
+                                'contacts.instagram' => [
+                                    'type' => 'text',
+                                    'help' => 'Текстовое поле',
+                                    'label' => 'Instagram',
+                                    'default' => 'https://instagram.com/chinaforus'
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+];

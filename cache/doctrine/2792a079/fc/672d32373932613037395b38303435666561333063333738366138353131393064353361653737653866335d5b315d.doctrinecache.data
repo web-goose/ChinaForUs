@@ -1,0 +1,46 @@
+1573040195
+a:2:{s:7:"content";s:2983:"<section class="callback" id="callback">
+    <div class="section-info wow fadeInUp" data-wow-delay=".3s">
+        <h2 class="section_title">Связаться с нами</h2>
+        <h3 class="section_desc">Укажите, пожалуйста, что вас интересует, оставьте свои контактные данные, и мы свяжемся
+                        с вами в ближайшее время</h3>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-6 col-lg-7 col-12 pt-2 wow fadeInLeft">
+                <form class="form">
+                    <label class="callback-textarea">
+                        <textarea class="js-callback-textarea" required></textarea>
+                    </label>
+                    <div class="w-100 d-md-flex justify-content-md-between ">
+                        <label class="callback-name">
+                            <input class="js-callback-name" type="text" placeholder="Ваше имя*" required>
+                        </label>
+                        <label class="callback-email">
+                            <input class="js-callback-email" type="email" placeholder="Ваш E-mail*" required>
+                        </label>
+                    </div>
+                    <button class="js-callback-btn" type="submit">Отправить</button>
+                </form>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-12 pt-2 wow fadeInRight">
+                <div class="callback-title">
+                    ВСЕ ВАШИ ПОТРЕБНОСТИ В ОДНОМ МЕСТЕ
+                </div>
+                <div class="callback-desc">
+                    <p>Наши комплексные решения по поиску, упаковке и доставке поддерживают продавцов на каждом этапе их
+                                                пути. Все начинается с правильного планирования. Мы знаем, насколько важно для продавца
+                                                поддерживать
+                                                уровень своих запасов и о последствиях, которые могут наступить, если товар не будет готов или
+                                                не
+                                                будет доставлен вовремя.</p>
+                    <p>Вот почему наши специалисты работают в тесном контакте с клиентами и
+                                                поставщиками, планируя всю работу самым оптимальным образом.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+";s:12:"content_meta";N;}

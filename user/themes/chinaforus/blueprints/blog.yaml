@@ -40,6 +40,17 @@ form:
               validate:
                 type: bool
 
+            header.isSearch:
+              type: toggle
+              label: Это страница поиска?
+              highlight: 1
+              default: 0
+              options:
+                1: Да
+                0: Нет
+              validate:
+                type: bool
+
             header.content.items:
               type: textarea
               yaml: true

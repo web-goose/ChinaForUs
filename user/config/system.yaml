@@ -10,7 +10,6 @@ intl_enabled: true
 languages:
   supported:
     - ru
-  default_lang: ru
   include_default_lang: false
   pages_fallback_only: false
   translations: true

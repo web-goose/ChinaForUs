@@ -1,6 +1,6 @@
 {% set image = page.media.images|first %}
 
-{% if not page.header.isBlog %}
+{% if not page.header.isBlog and not page.header.visible %}
     {% if image %}
         <header style="background: url({{ image.url }}) 10% 60%">
         {% else %}
@@ -70,14 +70,15 @@
                     </svg>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ml-auto">
-                        <a class="nav-item nav-link header-nav-item" href="#faq" onclick="scrollToAnchor('#faq')">FAQ</a>
+                    <div
+                        class="navbar-nav ml-auto">
+                        {# <a class="nav-item nav-link header-nav-item" href="#faq" onclick="scrollToAnchor('#faq')">FAQ</a> #}
                         <a class="nav-item nav-link header-nav-item" href="{{ base_url }}">Главная</a>
-                        <a class="nav-item nav-link header-nav-item" href="#services" onclick="scrollToAnchor('#services')">Услуги</a>
+                        {# <a class="nav-item nav-link header-nav-item" href="#services" onclick="scrollToAnchor('#services')">Услуги</a> #}
                         <a class="nav-item nav-link header-nav-item" href="{{ base_url }}/about-us">О нас</a>
-                        <a class="nav-item nav-link header-nav-item" href="#reviews" onclick="scrollToAnchor('#reviews')">Отзывы</a>
+                        {# <a class="nav-item nav-link header-nav-item" href="#reviews" onclick="scrollToAnchor('#reviews')">Отзывы</a> #}
                         <a class="nav-item nav-link header-nav-item" href="{{ base_url }}/blog">Блог</a>
-                        <a class="nav-item nav-link header-nav-item" href="#contacts" onclick="scrollToAnchor('#contacts')">Контакты</a>
+                        {# <a class="nav-item nav-link header-nav-item" href="#contacts" onclick="scrollToAnchor('#contacts')">Контакты</a> #}
                     </div>
                 </div>
             </nav>

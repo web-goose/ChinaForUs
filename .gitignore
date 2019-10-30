@@ -1,10 +1,4 @@
-node_modules
-composer.lock
-source/
-/cache/
-tmp/
-.github/
-logs/
-user/accounts
-user/themes/quark
+node_modules/
 bash.sh
+package.json
+package-lock.json

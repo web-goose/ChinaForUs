@@ -9,14 +9,15 @@
     <section class="blog">
         <div class="container-fluid">
             <div class="row">
-                {% include "partials/blog/posts-list.html.twig" with {search_results: search_results } %}
+                {% include "partials/blog/posts-list.html.twig" with { search_results: search_results } %}
                 {% include "partials/blog/sidebar.html.twig" %}
             </div>
+            {{ page.header.isBlog }}
         </div>
     </section>
 {% endblock %}
 
-{% block bottom %}
+{# {% block bottom %}
     {{ parent() }}
     <script src="https://kit.fontawesome.com/51543d4319.js"></script>
-{% endblock %}
+{% endblock %} #}

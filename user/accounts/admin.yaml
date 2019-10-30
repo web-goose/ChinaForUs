@@ -1,0 +1,14 @@
+state: enabled
+email: someemail@mail.com
+fullname: Maks
+title: admin
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$Xr8UkLMUWKmiThwgrjnHkuywwzOceEgTN1QTawHJ3SXnRYTsi/soC
+language: ru
+twofa_enabled: false
+twofa_secret: TYKMVJ4SLBUH6H7Z3QYAGBIJI2OJRP2Z
