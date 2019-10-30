@@ -1,0 +1,58 @@
+1573043903
+a:2:{s:7:"content";s:3883:"
+<section class="blog" id="blog">
+    <div class="section-info wow fadeInUp" data-wow-delay=".3s">
+        <h2 class="section_title">В нашем блоге:</h2>
+        <h3 class="section_desc">Главные события из мира Китая, которые влияют на ведение бизнеса, способы
+                                самостоятельного выбора поставщика, распространенные ошибки при заказе товаров и многое другое</h3>
+    </div>
+    <div class="container-fluid">
+        <div class="row box-items">
+                                            <div class="col-xl-3 col-lg-6 col-md-6 col-12 box-item blog-item wow fadeIn" data-wow-delay=".3s" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/ChinaForUs/user/pages/03.blog/pervyi-post/moon_tree_starry_sky_132139_1920x1080.jpg) center no-repeat">
+                    <div class="box-item-shade"></div>
+                    <div class="box-item-info">
+                        <div class="box-item-info-inner">
+                            <div class="wrap">
+                                <div class="box-item-title">Первый пост</div>
+                                <div class="box-item-desc"><p>Lorem Ipsum Dollor Sit Amet</p>
+<p>Ob</div>
+                                <div class="box-item-btn">
+                                    <a href="/ChinaForUs/blog/pervyi-post" target="_blank">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                            <div class="col-xl-3 col-lg-6 col-md-6 col-12 box-item blog-item wow fadeIn" data-wow-delay=".3s" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/ChinaForUs/user/pages/03.blog/vtoroi-post/exoplanet_atmosphere_clouds_stars_moon_mist_mountains_rocks_101205_1920x1080.jpg) center no-repeat">
+                    <div class="box-item-shade"></div>
+                    <div class="box-item-info">
+                        <div class="box-item-info-inner">
+                            <div class="wrap">
+                                <div class="box-item-title">Второй пост</div>
+                                <div class="box-item-desc"><p>Lorem Ipsum Dollor Sit Amet
+Oblique p</div>
+                                <div class="box-item-btn">
+                                    <a href="/ChinaForUs/blog/vtoroi-post" target="_blank">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                            <div class="col-xl-3 col-lg-6 col-md-6 col-12 box-item blog-item wow fadeIn" data-wow-delay=".3s" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/ChinaForUs/user/pages/03.blog/tretii-post/forest_trees_fog_140925_2560x1440.jpg) center no-repeat">
+                    <div class="box-item-shade"></div>
+                    <div class="box-item-info">
+                        <div class="box-item-info-inner">
+                            <div class="wrap">
+                                <div class="box-item-title">Третий пост</div>
+                                <div class="box-item-desc"><p>Lorem Ipsum Dollor Sit Amet Oblique p</div>
+                                <div class="box-item-btn">
+                                    <a href="/ChinaForUs/blog/tretii-post" target="_blank">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+    </div>
+</section>
+";s:12:"content_meta";N;}

@@ -5,6 +5,13 @@
     {% do assets.addCss('theme://css/blog/styles.css') %}
 {% endblock %}
 
+{% block header %}
+    {% if search_results %}
+        {% set blog_head = True %}
+    {% endif %}
+    {% include 'partials/header.html.twig' with { 'blog_head': blog_head } %}
+{% endblock %}
+
 {% block content %}
     <section class="blog">
         <div class="container-fluid">
@@ -12,12 +19,6 @@
                 {% include "partials/blog/posts-list.html.twig" with { search_results: search_results } %}
                 {% include "partials/blog/sidebar.html.twig" %}
             </div>
-            {{ page.header.isBlog }}
         </div>
     </section>
 {% endblock %}
-
-{# {% block bottom %}
-    {{ parent() }}
-    <script src="https://kit.fontawesome.com/51543d4319.js"></script>
-{% endblock %} #}

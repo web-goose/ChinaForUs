@@ -32,7 +32,7 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
         echo "
 ";
         // line 3
-        if (( !$this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "isBlog", []) &&  !$this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "visible", []))) {
+        if (( !$this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "isBlog", []) && ($this->getAttribute(($context["page"] ?? null), "slug", []) != "pages"))) {
             // line 4
             echo "    ";
             if (($context["image"] ?? null)) {
@@ -51,7 +51,7 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
                 <a class=\"navbar-brand\" href=\"";
             // line 10
             echo ($context["base_url"] ?? null);
-            echo "\"><img class=\"header-logo\" src=\"";
+            echo "/\"><img class=\"header-logo\" src=\"";
             echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://img/all/logo.png");
             echo "\" alt=\"logo\"></a>
                 <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
@@ -65,7 +65,7 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
                         <a class=\"nav-item nav-link header-nav-item\" href=\"";
             // line 19
             echo ($context["base_url"] ?? null);
-            echo "\">Главная</a>
+            echo "/\">Главная</a>
                         <a class=\"nav-item nav-link header-nav-item\" href=\"#services\" onclick=\"scrollToAnchor('#services')\">Услуги</a>
                         <a class=\"nav-item nav-link header-nav-item\" href=\"";
             // line 21
@@ -127,9 +127,11 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
             }
             // line 61
             echo "        </header>
-
     ";
-        } else {
+        }
+        // line 63
+        echo "    ";
+        if (($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "isBlog", []) || ($this->getAttribute(($context["page"] ?? null), "slug", []) == "pages"))) {
             // line 64
             echo "        <header>
             <nav class=\"navbar navbar-expand-lg header-nav\">
@@ -145,26 +147,20 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
                     </svg>
                 </button>
                 <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">
-                    <div
-                        class=\"navbar-nav ml-auto\">
-                        ";
-            // line 76
-            echo "                        <a class=\"nav-item nav-link header-nav-item\" href=\"";
+                    <div class=\"navbar-nav ml-auto\">
+                        <a class=\"nav-item nav-link header-nav-item\" href=\"";
+            // line 74
             echo ($context["base_url"] ?? null);
-            echo "\">Главная</a>
-                        ";
-            // line 78
-            echo "                        <a class=\"nav-item nav-link header-nav-item\" href=\"";
+            echo "/\">Главная</a>
+                        <a class=\"nav-item nav-link header-nav-item\" href=\"";
+            // line 75
             echo ($context["base_url"] ?? null);
             echo "/about-us\">О нас</a>
-                        ";
-            // line 80
-            echo "                        <a class=\"nav-item nav-link header-nav-item\" href=\"";
+                        <a class=\"nav-item nav-link header-nav-item\" href=\"";
+            // line 76
             echo ($context["base_url"] ?? null);
             echo "/blog\">Блог</a>
-                        ";
-            // line 82
-            echo "                    </div>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -184,7 +180,7 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
 
     public function getDebugInfo()
     {
-        return array (  167 => 82,  162 => 80,  157 => 78,  152 => 76,  138 => 66,  134 => 64,  129 => 61,  122 => 57,  117 => 55,  112 => 52,  88 => 30,  86 => 29,  77 => 23,  72 => 21,  67 => 19,  53 => 10,  50 => 9,  46 => 7,  40 => 5,  37 => 4,  35 => 3,  32 => 2,  30 => 1,);
+        return array (  161 => 76,  157 => 75,  153 => 74,  140 => 66,  136 => 64,  133 => 63,  129 => 61,  122 => 57,  117 => 55,  112 => 52,  88 => 30,  86 => 29,  77 => 23,  72 => 21,  67 => 19,  53 => 10,  50 => 9,  46 => 7,  40 => 5,  37 => 4,  35 => 3,  32 => 2,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -199,14 +195,14 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
     {
         return new Source("{% set image = page.media.images|first %}
 
-{% if not page.header.isBlog and not page.header.visible %}
+{% if not page.header.isBlog and page.slug != 'pages' %}
     {% if image %}
         <header style=\"background: url({{ image.url }}) 10% 60%\">
         {% else %}
             <header>
             {% endif %}
             <nav class=\"navbar navbar-expand-lg header-nav\">
-                <a class=\"navbar-brand\" href=\"{{ base_url }}\"><img class=\"header-logo\" src=\"{{ url('theme://img/all/logo.png') }}\" alt=\"logo\"></a>
+                <a class=\"navbar-brand\" href=\"{{ base_url }}/\"><img class=\"header-logo\" src=\"{{ url('theme://img/all/logo.png') }}\" alt=\"logo\"></a>
                 <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
                     <svg class=\"header-nav-toggle\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 448 512\">
                         <path d=\"M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z\"/>
@@ -215,7 +211,7 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
                 <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">
                     <div class=\"navbar-nav ml-auto\">
                         <a class=\"nav-item nav-link header-nav-item\" href=\"#faq\" onclick=\"scrollToAnchor('#faq')\">FAQ</a>
-                        <a class=\"nav-item nav-link header-nav-item\" href=\"{{ base_url }}\">Главная</a>
+                        <a class=\"nav-item nav-link header-nav-item\" href=\"{{ base_url }}/\">Главная</a>
                         <a class=\"nav-item nav-link header-nav-item\" href=\"#services\" onclick=\"scrollToAnchor('#services')\">Услуги</a>
                         <a class=\"nav-item nav-link header-nav-item\" href=\"{{ base_url }}/about-us\">О нас</a>
                         <a class=\"nav-item nav-link header-nav-item\" href=\"#reviews\" onclick=\"scrollToAnchor('#reviews')\">Отзывы</a>
@@ -258,8 +254,8 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
                 </div>
             {% endif %}
         </header>
-
-    {% else %}
+    {% endif %}
+    {% if page.header.isBlog or page.slug == 'pages' %}
         <header>
             <nav class=\"navbar navbar-expand-lg header-nav\">
                 <a class=\"navbar-brand\" href=\"{{ base_url }}\"><img class=\"header-logo\" src=\"{{ url('theme://img/all/logo.png') }}\" alt=\"logo\"></a>
@@ -269,15 +265,10 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
                     </svg>
                 </button>
                 <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">
-                    <div
-                        class=\"navbar-nav ml-auto\">
-                        {# <a class=\"nav-item nav-link header-nav-item\" href=\"#faq\" onclick=\"scrollToAnchor('#faq')\">FAQ</a> #}
-                        <a class=\"nav-item nav-link header-nav-item\" href=\"{{ base_url }}\">Главная</a>
-                        {# <a class=\"nav-item nav-link header-nav-item\" href=\"#services\" onclick=\"scrollToAnchor('#services')\">Услуги</a> #}
+                    <div class=\"navbar-nav ml-auto\">
+                        <a class=\"nav-item nav-link header-nav-item\" href=\"{{ base_url }}/\">Главная</a>
                         <a class=\"nav-item nav-link header-nav-item\" href=\"{{ base_url }}/about-us\">О нас</a>
-                        {# <a class=\"nav-item nav-link header-nav-item\" href=\"#reviews\" onclick=\"scrollToAnchor('#reviews')\">Отзывы</a> #}
                         <a class=\"nav-item nav-link header-nav-item\" href=\"{{ base_url }}/blog\">Блог</a>
-                        {# <a class=\"nav-item nav-link header-nav-item\" href=\"#contacts\" onclick=\"scrollToAnchor('#contacts')\">Контакты</a> #}
                     </div>
                 </div>
             </nav>

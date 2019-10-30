@@ -35,7 +35,7 @@ class __TwigTemplate_0051bd4f32672818080187053b1dd1fd51f2e4e07c3a841d6a9d923fdfb
                     <a href=\"";
         // line 6
         echo ($context["base_url"] ?? null);
-        echo "\"><img src=\"";
+        echo "/\"><img src=\"";
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://img/all/logo.png");
         echo "\" alt=\"logo\"></a>
                 </div>
@@ -67,8 +67,8 @@ class __TwigTemplate_0051bd4f32672818080187053b1dd1fd51f2e4e07c3a841d6a9d923fdfb
                     <li>
                         <a href=\"";
         // line 28
-        echo $this->getAttribute(($context["base"] ?? null), "url", []);
-        echo "\">Главная</a>
+        echo ($context["base_url"] ?? null);
+        echo "/\">Главная</a>
                     </li>
                     <li>
                         <a href=\"";
@@ -135,10 +135,6 @@ class __TwigTemplate_0051bd4f32672818080187053b1dd1fd51f2e4e07c3a841d6a9d923fdfb
         echo ($context["base_url"] ?? null);
         echo "/services/foto-na-listing\">Фото на листинг</a>
                     </li>
-                    <li>
-                        <a href=\"\">Консультации (бесплатно)</a>
-                    </li>
-
                 </ul>
             </div>
             <div class=\"col-xl-2 col-lg-3 col-md-3 col-12 text-md-left text-center pt-3\">
@@ -146,7 +142,7 @@ class __TwigTemplate_0051bd4f32672818080187053b1dd1fd51f2e4e07c3a841d6a9d923fdfb
                 <ul class=\"menu\">
                     <li>
                         <a href=\"";
-        // line 75
+        // line 71
         echo ($context["base_url"] ?? null);
         echo "/faq\">Ответы на ваши вопросы</a>
                     </li>
@@ -170,7 +166,7 @@ class __TwigTemplate_0051bd4f32672818080187053b1dd1fd51f2e4e07c3a841d6a9d923fdfb
 
     public function getDebugInfo()
     {
-        return array (  150 => 75,  135 => 63,  129 => 60,  123 => 57,  117 => 54,  111 => 51,  105 => 48,  99 => 45,  93 => 42,  82 => 34,  76 => 31,  70 => 28,  53 => 14,  45 => 9,  37 => 6,  30 => 1,);
+        return array (  146 => 71,  135 => 63,  129 => 60,  123 => 57,  117 => 54,  111 => 51,  105 => 48,  99 => 45,  93 => 42,  82 => 34,  76 => 31,  70 => 28,  53 => 14,  45 => 9,  37 => 6,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -188,7 +184,7 @@ class __TwigTemplate_0051bd4f32672818080187053b1dd1fd51f2e4e07c3a841d6a9d923fdfb
         <div class=\"row d-flex justify-content-center\">
             <div class=\"col-xl-2 col-lg-3 col-md-3 col-12 text-md-left text-center pt-3\">
                 <div class=\"footer-logo\">
-                    <a href=\"{{ base_url }}\"><img src=\"{{ url('theme://img/all/logo.png') }}\" alt=\"logo\"></a>
+                    <a href=\"{{ base_url }}/\"><img src=\"{{ url('theme://img/all/logo.png') }}\" alt=\"logo\"></a>
                 </div>
                 <div class=\"footer-soc\">
                     <a href=\"{{ site.contacts.youtube }}\">
@@ -210,7 +206,7 @@ class __TwigTemplate_0051bd4f32672818080187053b1dd1fd51f2e4e07c3a841d6a9d923fdfb
                 <div class=\"menu-title\">О КОМПАНИИ</div>
                 <ul class=\"menu\">
                     <li>
-                        <a href=\"{{ base.url }}\">Главная</a>
+                        <a href=\"{{ base_url }}/\">Главная</a>
                     </li>
                     <li>
                         <a href=\"{{ base_url }}/about-us\">О нас</a>
@@ -247,10 +243,6 @@ class __TwigTemplate_0051bd4f32672818080187053b1dd1fd51f2e4e07c3a841d6a9d923fdfb
                     <li>
                         <a href=\"{{ base_url }}/services/foto-na-listing\">Фото на листинг</a>
                     </li>
-                    <li>
-                        <a href=\"\">Консультации (бесплатно)</a>
-                    </li>
-
                 </ul>
             </div>
             <div class=\"col-xl-2 col-lg-3 col-md-3 col-12 text-md-left text-center pt-3\">

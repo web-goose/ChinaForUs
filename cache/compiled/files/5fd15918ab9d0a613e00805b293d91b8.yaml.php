@@ -2,9 +2,9 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/sites/ChinaForUs/user/data/notifications/21232f297a57a5a743894a0e4a801fc3.yaml',
-    'modified' => 1572434616,
+    'modified' => 1572445485,
     'data' => [
-        'last_checked' => 1572434616,
+        'last_checked' => 1572445485,
         'data' => [
             'feed' => [
                 0 => [

@@ -10,20 +10,20 @@ whoarewe:
             name: Алена
             role: 'Customers Support'
             img:
-                user/themes/chinaforus/img/personal/1.jpg:
-                    name: 1.jpg
+                user/themes/chinaforus/img/personal/3.jpg:
+                    name: 3.jpg
                     type: image/jpeg
-                    size: 4084
-                    path: user/themes/chinaforus/img/personal/1.jpg
+                    size: 11958
+                    path: user/themes/chinaforus/img/personal/3.jpg
         -
             name: Дмитрий
             role: 'Design Director'
             img:
-                user/themes/chinaforus/img/personal/2.jpg:
-                    name: 2.jpg
+                user/themes/chinaforus/img/personal/3.jpg:
+                    name: 3.jpg
                     type: image/jpeg
-                    size: 4503
-                    path: user/themes/chinaforus/img/personal/2.jpg
+                    size: 11958
+                    path: user/themes/chinaforus/img/personal/3.jpg
         -
             name: Владимир
             role: 'Founder & Art Director'
@@ -31,7 +31,7 @@ whoarewe:
                 user/themes/chinaforus/img/personal/3.jpg:
                     name: 3.jpg
                     type: image/jpeg
-                    size: 3726
+                    size: 11958
                     path: user/themes/chinaforus/img/personal/3.jpg
 ---
 

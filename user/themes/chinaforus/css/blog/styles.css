@@ -166,3 +166,6 @@ input {
 .pagination-wrapper {
   display: flex;
   justify-content: center; }
+
+header {
+  background: #000; }

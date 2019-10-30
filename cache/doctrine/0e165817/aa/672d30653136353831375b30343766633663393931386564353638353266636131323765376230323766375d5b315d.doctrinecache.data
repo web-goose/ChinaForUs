@@ -1,0 +1,52 @@
+1573043903
+a:2:{s:7:"content";s:4401:"
+<section class="faq" id="faq">
+    <div class="section-info wow fadeInUp" data-wow-delay=".3s">
+        <h2 class="section_title">FAQ</h2>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div id="faq-list" class="wow jackInTheBox">
+                                                                                                                    <div class="card">
+                            <div class="card-header" id="heading-1" style="background: rgb(245, 145, 79);">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link faq-btn " data-toggle="collapse" data-target="#collapse-1" aria-expanded="true" aria-controls="card-1" style="color: rgb(255, 255, 255);">
+                                        Как вы проверяете товар? Вы находитесь в Китае?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse-1" class="collapse show" aria-labelledby="heading-1" data-parent="#faq-list">
+                                <div class="card-body">
+                                    Мы находимся в Китае, что дает нам возможность видеть в каком состоянии ваши товары отправляются вам или на склады Амазон.
+При получении товар осматривается. Производятся замеры и взвешивание. Если коробки повреждены или не соответствуют заявленному товару, весу, об этом сообщается вам. Мы можем осуществить замену коробок на соответствующие и/или усилить их специальными транспортировочными уголками. Осмотр товара, находящегося в транспортировочных коробках, путем вскрытия случайных коробок производится бесплатно, фото (и/или видео) также предоставляется. Если требуется, на транспортировочные коробки клеятся дополнительные шипментлэйблы, по 2 штуки - также бесплатно.
+                                </div>
+                            </div>
+                        </div>
+                                                                                                                    <div class="card">
+                            <div class="card-header" id="heading-2" style="">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link faq-btn collapsed" data-toggle="collapse" data-target="#collapse-2" aria-expanded="true" aria-controls="card-2" style="">
+                                        Сколько стоит доставка товара на склад Амазон?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse-2" class="collapse " aria-labelledby="heading-2" data-parent="#faq-list">
+                                <div class="card-body">
+                                    Для расчета стоимости доставки, пожалуйста, ознакомьтесь и заполните заявку или просто свяжитесь с нами. Минимальный вес 1 места (транспортировочной коробки), физический или объемный, - не менее 10 кг в США, 15 кг в Европу. Морем - от 100 кг.
+                                </div>
+                            </div>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-info wow jackInTheBox pt-5">
+        <h2 class="section_desc">Больше вопросов и ответов здесь:</h2>
+        <a href="faq">
+            <button class="faq-btn-more mt-5">FAQ</button>
+        </a>
+    </div>
+</section>
+";s:12:"content_meta";N;}
