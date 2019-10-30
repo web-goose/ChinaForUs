@@ -118,3 +118,46 @@ $('#faq-list').on('hide.bs.collapse', function (e) {
 
 });
 
+
+$(".js-form-name").on('change keyup paste', function () {
+    let text = $(this).val();
+    $('.js-form-name').val(text);
+});
+
+$(".js-form-phone").on('change keyup paste', function () {
+    let text = $(this).val();
+    $('.js-form-phone').val(text);
+});
+
+$(".js-form-email").on('change keyup paste', function () {
+    let text = $(this).val();
+    $('.js-form-email').val(text);
+});
+
+function sendRequest() {
+    $.ajax({
+        type: 'POST',
+        url: 'mail.php',
+        data: 'name=' + $(".js-form-name").val() + '&phone=' + $(".js-form-phone").val() + '&email=' + $('.js-form-email').val(),
+        success: function (data) {
+            $('.js-form-email').val('');
+            $('.js-form-phone').val('');
+            $('.js-form-name').val('');
+            alert('Успешно, отправлено!');
+        }
+    })
+}
+
+function callback() {
+    $.ajax({
+        type: 'POST',
+        url: 'mail.php',
+        data: 'name=' + $(".js-callback-name").val() + '&message=' + $(".js-callback-textarea").val() + '&email=' + $('.js-callback-email').val(),
+        success: function (data) {
+            $('.js-callback-name').val('');
+            $('.js-callback-textarea').val('');
+            $('.js-callback-email').val('');
+            alert('Успешно, отправлено!');
+        }
+    })
+}
