@@ -20,7 +20,6 @@ class __TwigTemplate_69ceb5a5474c9ba941df1ecb8ca3de13839195b1dd76bd054537e90dc99
 
         $this->blocks = [
             'stylesheets' => [$this, 'block_stylesheets'],
-            'header' => [$this, 'block_header'],
             'content' => [$this, 'block_content'],
         ];
     }
@@ -50,36 +49,19 @@ class __TwigTemplate_69ceb5a5474c9ba941df1ecb8ca3de13839195b1dd76bd054537e90dc99
     }
 
     // line 8
-    public function block_header($context, array $blocks = [])
-    {
-        // line 9
-        echo "    ";
-        if (($context["search_results"] ?? null)) {
-            // line 10
-            echo "        ";
-            $context["blog_head"] = ($context["True"] ?? null);
-            // line 11
-            echo "    ";
-        }
-        // line 12
-        echo "    ";
-        $this->loadTemplate("partials/header.html.twig", "blog.html.twig", 12)->display(twig_array_merge($context, ["blog_head" => ($context["blog_head"] ?? null)]));
-    }
-
-    // line 15
     public function block_content($context, array $blocks = [])
     {
-        // line 16
+        // line 9
         echo "    <section class=\"blog\">
         <div class=\"container-fluid\">
             <div class=\"row\">
                 ";
-        // line 19
-        $this->loadTemplate("partials/blog/posts-list.html.twig", "blog.html.twig", 19)->display(twig_array_merge($context, ["search_results" => ($context["search_results"] ?? null)]));
-        // line 20
+        // line 12
+        $this->loadTemplate("partials/blog/posts-list.html.twig", "blog.html.twig", 12)->display(twig_array_merge($context, ["search_results" => ($context["search_results"] ?? null)]));
+        // line 13
         echo "                ";
-        $this->loadTemplate("partials/blog/sidebar.html.twig", "blog.html.twig", 20)->display($context);
-        // line 21
+        $this->loadTemplate("partials/blog/sidebar.html.twig", "blog.html.twig", 13)->display($context);
+        // line 14
         echo "            </div>
         </div>
     </section>
@@ -98,7 +80,7 @@ class __TwigTemplate_69ceb5a5474c9ba941df1ecb8ca3de13839195b1dd76bd054537e90dc99
 
     public function getDebugInfo()
     {
-        return array (  83 => 21,  80 => 20,  78 => 19,  73 => 16,  70 => 15,  65 => 12,  62 => 11,  59 => 10,  56 => 9,  53 => 8,  49 => 5,  44 => 4,  41 => 3,  31 => 1,);
+        return array (  65 => 14,  62 => 13,  60 => 12,  55 => 9,  52 => 8,  48 => 5,  43 => 4,  40 => 3,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -116,13 +98,6 @@ class __TwigTemplate_69ceb5a5474c9ba941df1ecb8ca3de13839195b1dd76bd054537e90dc99
 {% block stylesheets %}
     {{ parent() }}
     {% do assets.addCss('theme://css/blog/styles.css') %}
-{% endblock %}
-
-{% block header %}
-    {% if search_results %}
-        {% set blog_head = True %}
-    {% endif %}
-    {% include 'partials/header.html.twig' with { 'blog_head': blog_head } %}
 {% endblock %}
 
 {% block content %}

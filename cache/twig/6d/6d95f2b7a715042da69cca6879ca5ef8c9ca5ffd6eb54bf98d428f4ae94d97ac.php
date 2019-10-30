@@ -80,11 +80,10 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
                     </div>
                 </div>
             </nav>
-
             ";
-            // line 29
+            // line 28
             if ($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "isIndex", [])) {
-                // line 30
+                // line 29
                 echo "                <div class=\"header-wrap\">
                     <div class=\"header-wrap-info\">
                         <h1 class=\"header-wrap-title wow fadeInUp\" data-wow-delay=\"1s\">Бизнес с Китаем
@@ -108,35 +107,35 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
                 <span id=\"special\"></span>
             ";
             } else {
-                // line 52
+                // line 51
                 echo "                <div class=\"header-wrap\">
                     <div class=\"header-wrap-info\">
                         <h1 class=\"header-wrap-title wow fadeInUp\" data-wow-delay=\"1s\">
                             ";
-                // line 55
+                // line 54
                 echo $this->getAttribute(($context["page"] ?? null), "title", []);
                 echo "
                         </h1>
                         <div class=\"header-wrap-desc wow fadeInUp\" data-wow-delay=\"1.5s\">";
-                // line 57
+                // line 56
                 echo $this->getAttribute(($context["page"] ?? null), "content", []);
                 echo "</div>
                     </div>
                 </div>
             ";
             }
-            // line 61
+            // line 60
             echo "        </header>
     ";
         }
-        // line 63
+        // line 62
         echo "    ";
         if (($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "isBlog", []) || ($this->getAttribute(($context["page"] ?? null), "slug", []) == "pages"))) {
-            // line 64
+            // line 63
             echo "        <header>
             <nav class=\"navbar navbar-expand-lg header-nav\">
                 <a class=\"navbar-brand\" href=\"";
-            // line 66
+            // line 65
             echo ($context["base_url"] ?? null);
             echo "\"><img class=\"header-logo\" src=\"";
             echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://img/all/logo.png");
@@ -149,15 +148,15 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
                 <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">
                     <div class=\"navbar-nav ml-auto\">
                         <a class=\"nav-item nav-link header-nav-item\" href=\"";
-            // line 74
+            // line 73
             echo ($context["base_url"] ?? null);
             echo "/\">Главная</a>
                         <a class=\"nav-item nav-link header-nav-item\" href=\"";
-            // line 75
+            // line 74
             echo ($context["base_url"] ?? null);
             echo "/about-us\">О нас</a>
                         <a class=\"nav-item nav-link header-nav-item\" href=\"";
-            // line 76
+            // line 75
             echo ($context["base_url"] ?? null);
             echo "/blog\">Блог</a>
                     </div>
@@ -180,7 +179,7 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
 
     public function getDebugInfo()
     {
-        return array (  161 => 76,  157 => 75,  153 => 74,  140 => 66,  136 => 64,  133 => 63,  129 => 61,  122 => 57,  117 => 55,  112 => 52,  88 => 30,  86 => 29,  77 => 23,  72 => 21,  67 => 19,  53 => 10,  50 => 9,  46 => 7,  40 => 5,  37 => 4,  35 => 3,  32 => 2,  30 => 1,);
+        return array (  160 => 75,  156 => 74,  152 => 73,  139 => 65,  135 => 63,  132 => 62,  128 => 60,  121 => 56,  116 => 54,  111 => 51,  87 => 29,  85 => 28,  77 => 23,  72 => 21,  67 => 19,  53 => 10,  50 => 9,  46 => 7,  40 => 5,  37 => 4,  35 => 3,  32 => 2,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -220,7 +219,6 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
                     </div>
                 </div>
             </nav>
-
             {% if page.header.isIndex %}
                 <div class=\"header-wrap\">
                     <div class=\"header-wrap-info\">
