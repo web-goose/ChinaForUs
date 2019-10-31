@@ -83,6 +83,13 @@
 
 @media screen and (max-width: 768px) {
   .header-wrap {
-    height: calc(100vh - 40px - 70vh) !important;
+    height: calc(100vh - 40px - 40vh) !important;
+  }
+  .about-us-uid-1, .about-us-uid-7{
+    .left{
+      font-size: 3em;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
   }
 }
