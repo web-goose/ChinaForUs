@@ -286,6 +286,7 @@ header {
       .header-wrap-desc {
         color: $textWhite;
         font-size: 3.8em;
+        font-weight: 300;
         margin: 40px auto;
         visibility: hidden;
         @extend %textSemiBold;

@@ -29,27 +29,29 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
         // line 1
         $context["image"] = twig_first($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", []), "images", []));
         // line 2
+        $context["links"] = $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/services"], "method"), "children", []);
+        // line 3
         echo "
 ";
-        // line 3
+        // line 4
         if (( !$this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "isBlog", []) && ($this->getAttribute(($context["page"] ?? null), "slug", []) != "pages"))) {
-            // line 4
+            // line 5
             echo "    ";
             if (($context["image"] ?? null)) {
-                // line 5
+                // line 6
                 echo "        <header style=\"background: url(";
                 echo $this->getAttribute(($context["image"] ?? null), "url", []);
                 echo ") 10% 60%\">
         ";
             } else {
-                // line 7
+                // line 8
                 echo "            <header>
             ";
             }
-            // line 9
+            // line 10
             echo "            <nav class=\"navbar navbar-expand-lg header-nav\">
                 <a class=\"navbar-brand\" href=\"";
-            // line 10
+            // line 11
             echo ($context["base_url"] ?? null);
             echo "/\"><img class=\"header-logo\" src=\"";
             echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://img/all/logo.png");
@@ -63,17 +65,37 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
                     <div class=\"navbar-nav ml-auto\">
                         <a class=\"nav-item nav-link header-nav-item\" href=\"#faq\" onclick=\"scrollToAnchor('#faq')\">FAQ</a>
                         <a class=\"nav-item nav-link header-nav-item\" href=\"";
-            // line 19
+            // line 20
             echo ($context["base_url"] ?? null);
             echo "/\">Главная</a>
-                        <a class=\"nav-item nav-link header-nav-item\" href=\"#services\" onclick=\"scrollToAnchor('#services')\">Услуги</a>
+                        <div class=\"nav-item nav-link header-nav-item dropdown\" href=\"#services\" onclick=\"scrollToAnchor('#services')\">Услуги &#x25BC;
+                            <div class=\"dropdown-content\">
+                                ";
+            // line 23
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable(($context["links"] ?? null));
+            foreach ($context['_seq'] as $context["_key"] => $context["link"]) {
+                // line 24
+                echo "                                    <a href=\"";
+                echo $this->getAttribute($context["link"], "url", []);
+                echo "\">";
+                echo $this->getAttribute($context["link"], "title", []);
+                echo "</a>
+                                ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['link'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 26
+            echo "                            </div>
+                        </div>
                         <a class=\"nav-item nav-link header-nav-item\" href=\"";
-            // line 21
+            // line 28
             echo ($context["base_url"] ?? null);
             echo "/about-us\">О нас</a>
                         <a class=\"nav-item nav-link header-nav-item\" href=\"#reviews\" onclick=\"scrollToAnchor('#reviews')\">Отзывы</a>
                         <a class=\"nav-item nav-link header-nav-item\" href=\"";
-            // line 23
+            // line 30
             echo ($context["base_url"] ?? null);
             echo "/blog\">Блог</a>
                         <a class=\"nav-item nav-link header-nav-item\" href=\"#contacts\" onclick=\"scrollToAnchor('#contacts')\">Контакты</a>
@@ -81,20 +103,21 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
                 </div>
             </nav>
             ";
-            // line 28
+            // line 35
             if ($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "isIndex", [])) {
-                // line 29
+                // line 36
                 echo "                <div class=\"header-wrap\">
                     <div class=\"header-wrap-info\">
-                        <h1 class=\"header-wrap-title wow fadeInUp\" data-wow-delay=\"1s\">Бизнес с Китаем
-                            <span class=\"yellow-bg\">под ключ</span>
+                        <h1 class=\"header-wrap-title wow fadeInUp\" data-wow-delay=\"1s\">Ваш партнер в Китае
                         </h1>
                         <div class=\"header-wrap-desc wow fadeInUp\" data-wow-delay=\"1.5s\">
-                            <p>Поиск поставщика > сопровождение сделки</p>
-                            <p>Брендирование > логистика</p>
+                            <p>От поиска и создания
+                                <br>
+                                до производства и доставки
+                            </p>
                         </div>
                         <div class=\"header-wrap-btn wow fadeInUp\" data-wow-delay=\"2s\">
-                            <button>Что мы делаем</button>
+                            <button>Бесплатная консультация</button>
                         </div>
 
                     </div>
@@ -107,37 +130,37 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
                 <span id=\"special\"></span>
             ";
             } else {
-                // line 51
+                // line 59
                 echo "                <div class=\"header-wrap\">
                     <div class=\"header-wrap-info\">
                         <h1 class=\"header-wrap-title wow fadeInUp\" data-wow-delay=\"1s\">
                             ";
-                // line 54
+                // line 62
                 echo $this->getAttribute(($context["page"] ?? null), "title", []);
                 echo "
                         </h1>
                         <div class=\"header-wrap-desc wow fadeInUp\" data-wow-delay=\"1.5s\">";
-                // line 56
+                // line 64
                 echo $this->getAttribute(($context["page"] ?? null), "content", []);
                 echo "</div>
                     </div>
                 </div>
             ";
             }
-            // line 60
+            // line 68
             echo "        </header>
     ";
         }
-        // line 62
+        // line 70
         echo "    ";
         if (($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "isBlog", []) || ($this->getAttribute(($context["page"] ?? null), "slug", []) == "pages"))) {
-            // line 63
+            // line 71
             echo "        <header>
             <nav class=\"navbar navbar-expand-lg header-nav\">
                 <a class=\"navbar-brand\" href=\"";
-            // line 65
+            // line 73
             echo ($context["base_url"] ?? null);
-            echo "\"><img class=\"header-logo\" src=\"";
+            echo "/\"><img class=\"header-logo\" src=\"";
             echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://img/all/logo.png");
             echo "\" alt=\"logo\"></a>
                 <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
@@ -148,15 +171,15 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
                 <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">
                     <div class=\"navbar-nav ml-auto\">
                         <a class=\"nav-item nav-link header-nav-item\" href=\"";
-            // line 73
+            // line 81
             echo ($context["base_url"] ?? null);
             echo "/\">Главная</a>
                         <a class=\"nav-item nav-link header-nav-item\" href=\"";
-            // line 74
+            // line 82
             echo ($context["base_url"] ?? null);
             echo "/about-us\">О нас</a>
                         <a class=\"nav-item nav-link header-nav-item\" href=\"";
-            // line 75
+            // line 83
             echo ($context["base_url"] ?? null);
             echo "/blog\">Блог</a>
                     </div>
@@ -179,7 +202,7 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
 
     public function getDebugInfo()
     {
-        return array (  160 => 75,  156 => 74,  152 => 73,  139 => 65,  135 => 63,  132 => 62,  128 => 60,  121 => 56,  116 => 54,  111 => 51,  87 => 29,  85 => 28,  77 => 23,  72 => 21,  67 => 19,  53 => 10,  50 => 9,  46 => 7,  40 => 5,  37 => 4,  35 => 3,  32 => 2,  30 => 1,);
+        return array (  183 => 83,  179 => 82,  175 => 81,  162 => 73,  158 => 71,  155 => 70,  151 => 68,  144 => 64,  139 => 62,  134 => 59,  109 => 36,  107 => 35,  99 => 30,  94 => 28,  90 => 26,  79 => 24,  75 => 23,  69 => 20,  55 => 11,  52 => 10,  48 => 8,  42 => 6,  39 => 5,  37 => 4,  34 => 3,  32 => 2,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -193,6 +216,7 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
     public function getSourceContext()
     {
         return new Source("{% set image = page.media.images|first %}
+{% set links = page.find('/services').children %}
 
 {% if not page.header.isBlog and page.slug != 'pages' %}
     {% if image %}
@@ -211,7 +235,13 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
                     <div class=\"navbar-nav ml-auto\">
                         <a class=\"nav-item nav-link header-nav-item\" href=\"#faq\" onclick=\"scrollToAnchor('#faq')\">FAQ</a>
                         <a class=\"nav-item nav-link header-nav-item\" href=\"{{ base_url }}/\">Главная</a>
-                        <a class=\"nav-item nav-link header-nav-item\" href=\"#services\" onclick=\"scrollToAnchor('#services')\">Услуги</a>
+                        <div class=\"nav-item nav-link header-nav-item dropdown\" href=\"#services\" onclick=\"scrollToAnchor('#services')\">Услуги &#x25BC;
+                            <div class=\"dropdown-content\">
+                                {% for link in links %}
+                                    <a href=\"{{ link.url }}\">{{ link.title }}</a>
+                                {% endfor %}
+                            </div>
+                        </div>
                         <a class=\"nav-item nav-link header-nav-item\" href=\"{{ base_url }}/about-us\">О нас</a>
                         <a class=\"nav-item nav-link header-nav-item\" href=\"#reviews\" onclick=\"scrollToAnchor('#reviews')\">Отзывы</a>
                         <a class=\"nav-item nav-link header-nav-item\" href=\"{{ base_url}}/blog\">Блог</a>
@@ -222,15 +252,16 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
             {% if page.header.isIndex %}
                 <div class=\"header-wrap\">
                     <div class=\"header-wrap-info\">
-                        <h1 class=\"header-wrap-title wow fadeInUp\" data-wow-delay=\"1s\">Бизнес с Китаем
-                            <span class=\"yellow-bg\">под ключ</span>
+                        <h1 class=\"header-wrap-title wow fadeInUp\" data-wow-delay=\"1s\">Ваш партнер в Китае
                         </h1>
                         <div class=\"header-wrap-desc wow fadeInUp\" data-wow-delay=\"1.5s\">
-                            <p>Поиск поставщика > сопровождение сделки</p>
-                            <p>Брендирование > логистика</p>
+                            <p>От поиска и создания
+                                <br>
+                                до производства и доставки
+                            </p>
                         </div>
                         <div class=\"header-wrap-btn wow fadeInUp\" data-wow-delay=\"2s\">
-                            <button>Что мы делаем</button>
+                            <button>Бесплатная консультация</button>
                         </div>
 
                     </div>
@@ -256,7 +287,7 @@ class __TwigTemplate_6f5803fcb499e9c5d1d0b09fe98b581a71b1fdfe5cf95da37f20f3c97de
     {% if page.header.isBlog or page.slug == 'pages' %}
         <header>
             <nav class=\"navbar navbar-expand-lg header-nav\">
-                <a class=\"navbar-brand\" href=\"{{ base_url }}\"><img class=\"header-logo\" src=\"{{ url('theme://img/all/logo.png') }}\" alt=\"logo\"></a>
+                <a class=\"navbar-brand\" href=\"{{ base_url }}/\"><img class=\"header-logo\" src=\"{{ url('theme://img/all/logo.png') }}\" alt=\"logo\"></a>
                 <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
                     <svg class=\"header-nav-toggle\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 448 512\">
                         <path d=\"M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z\"/>

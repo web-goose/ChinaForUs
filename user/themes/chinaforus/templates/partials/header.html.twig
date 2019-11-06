@@ -1,4 +1,5 @@
 {% set image = page.media.images|first %}
+{% set links = page.find('/services').children %}
 
 {% if not page.header.isBlog and page.slug != 'pages' %}
     {% if image %}
@@ -17,7 +18,13 @@
                     <div class="navbar-nav ml-auto">
                         <a class="nav-item nav-link header-nav-item" href="#faq" onclick="scrollToAnchor('#faq')">FAQ</a>
                         <a class="nav-item nav-link header-nav-item" href="{{ base_url }}/">Главная</a>
-                        <a class="nav-item nav-link header-nav-item" href="#services" onclick="scrollToAnchor('#services')">Услуги</a>
+                        <div class="nav-item nav-link header-nav-item dropdown" href="#services" onclick="scrollToAnchor('#services')">Услуги &#x25BC;
+                            <div class="dropdown-content">
+                                {% for link in links %}
+                                    <a href="{{ link.url }}">{{ link.title }}</a>
+                                {% endfor %}
+                            </div>
+                        </div>
                         <a class="nav-item nav-link header-nav-item" href="{{ base_url }}/about-us">О нас</a>
                         <a class="nav-item nav-link header-nav-item" href="#reviews" onclick="scrollToAnchor('#reviews')">Отзывы</a>
                         <a class="nav-item nav-link header-nav-item" href="{{ base_url}}/blog">Блог</a>
@@ -28,15 +35,16 @@
             {% if page.header.isIndex %}
                 <div class="header-wrap">
                     <div class="header-wrap-info">
-                        <h1 class="header-wrap-title wow fadeInUp" data-wow-delay="1s">Бизнес с Китаем
-                            <span class="yellow-bg">под ключ</span>
+                        <h1 class="header-wrap-title wow fadeInUp" data-wow-delay="1s">Ваш партнер в Китае
                         </h1>
                         <div class="header-wrap-desc wow fadeInUp" data-wow-delay="1.5s">
-                            <p>Поиск поставщика > сопровождение сделки</p>
-                            <p>Брендирование > логистика</p>
+                            <p>От поиска и создания
+                                <br>
+                                до производства и доставки
+                            </p>
                         </div>
                         <div class="header-wrap-btn wow fadeInUp" data-wow-delay="2s">
-                            <button>Что мы делаем</button>
+                            <button>Бесплатная консультация</button>
                         </div>
 
                     </div>
