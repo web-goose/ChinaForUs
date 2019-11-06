@@ -192,19 +192,18 @@ header {
     header .header-nav .dropdown-content {
       display: none;
       position: absolute;
-      background-color: #f0f0f0;
+      background-color: #f1f1f18c;
       min-width: 200px;
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       z-index: 1; }
     header .header-nav .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
+      color: #000000;
+      padding: 8px 16px;
       font-weight: 400;
       text-decoration: none;
       display: block; }
       header .header-nav .dropdown-content a:hover {
-        color: #f5914f;
-        background-color: #e4e4e4; }
+        color: #f5914f; }
     header .header-nav .dropdown:hover .dropdown-content {
       display: block; }
   header .header-wrap {
