@@ -6,6 +6,6 @@
         "scss-blog": "node-sass -w user/themes/chinaforus/scss/blog/main.scss user/themes/chinaforus/css/blog/styles.css"
     },
     "dependencies": {
-        "node-sass": "^4.12.0"
+        "node-sass": "^4.13.1"
     }
 }
